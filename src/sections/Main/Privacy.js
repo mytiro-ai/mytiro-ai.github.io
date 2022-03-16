@@ -69,7 +69,7 @@ const Privacy = () => {
                   >
                     {Content[0]}
                   </Text>
-                  <Text
+                  {/* <Text
                     css={`
                       font-weight: 400;
                       font-size: 20px;
@@ -86,7 +86,7 @@ const Privacy = () => {
                     <button onClick={readMoreHandler} className="mt-3">
                       Read More <i className="icon icon-small-down" />
                     </button>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>

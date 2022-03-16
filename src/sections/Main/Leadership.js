@@ -7,7 +7,6 @@ import rajeev from "../../assets/SVG/Rajeev Ved.svg";
 import { Title, Section, Box, Text } from "../../components/Core";
 import pattern4 from "../../assets/SVG/Pattern_4@2x.svg";
 
-
 const ShapeBottomLeft = styled(Box)`
   position: absolute;
   // top: 0em;
@@ -19,10 +18,11 @@ const ShapeBottomLeft = styled(Box)`
 `;
 
 const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
-  <Box bg="light" borderRadius={10} mb={4} {...rest}>
+  <Box bg="light" borderRadius={10} mb={4} {...rest} css={{height: '700px', overflow: 'visible'}}>
     <Box
       fontSize="28px"
       className="d-flex justify-content-center align-items-center"
+      css={{backgroundColor: 'transparent'}}
     >
       <img src={imgSrc} />
     </Box>
@@ -71,17 +71,21 @@ const Leadership = () => {
   };
   return (
     <>
-      <ShapeBottomLeft>
-        <img src={pattern4} alt="" className="img-fluid" />
-      </ShapeBottomLeft>
       <Section
         id="team"
         className="position-relative"
         css={`
           margin-left: 2.5em;
           margin-right: 2.5em;
+          min-height: 900px;
         `}
       >
+        <img
+          src={pattern4}
+          alt=""
+          className="img-fluid"
+          style={{ position: "absolute", top: 100, left: -300 }}
+        />
         <Row className="align-items-center">
           <Col lg="4" className="order-lg-1">
             <div
@@ -191,12 +195,12 @@ const Leadership = () => {
                     {RajeevContent[0]}
                   </Text>
                   {readRajeev ? (
-                    <Text variant="small">{RajeevContent[1]}</Text>
+                    <Text variant="small" >{RajeevContent[1]}</Text>
                   ) : (
                     ""
                   )}
                   {readRajeev ? (
-                    <button onClick={readMoreRajeevData} className="mt-3">
+                    <button onClick={readMoreRajeevData} className="mt-3" css={{zIndex: 2}}>
                       Read Less <i className="icon icon-small-up" />
                     </button>
                   ) : (
@@ -208,8 +212,86 @@ const Leadership = () => {
               </Col>
             </Row>
           </Col>
+        </Row>
+      </Section>
+      
+      <Section
+        id="team"
+        className="position-relative"
+        css={`
+          margin-left: 2.5em;
+          margin-right: 2.5em;
+          display: flex;
+          flex-direction: column;
+          justifyItems: baseline;
+          height: auto;
+        `}
+      >
+        <img
+          src={pattern4}
+          alt=""
+          className="img-fluid"
+          style={{ position: "absolute", top: 100, right: -300 }}
+        />
+        <Row className="align-items-center" id="our-advisors-container">
+        <Col lg="8" className="pl-lg-5 order-lg-1">
+            <Row>
+              <Col md="1"></Col>
+              <Col md="4">
+                <FeatureCard imgSrc={shoaib}>
+                  <Text
+                    className="mb-0"
+                    css={`
+                      color: black;
+                      font-weight: 650;
+                      letter-spacing: -2.5px;
+                      font-size: 3rem;
+                      line-height: 54px;
 
-          {/* <Col lg="4" className="order-lg-1">
+                      @media ${device.sm} {
+                        font-size: 1.5rem;
+                        line-height: 62px;
+                      }
+
+                      @media ${device.lg} {
+                        font-size: 2.1rem;
+                        line-height: 70px;
+                      }
+                    `}
+                  >
+                    Jennifer
+                  </Text>
+                  <Text>
+                    Co-founder and CTO{" "}
+                    <a href="/#" target="_blank">
+                      <i className="ml-2 icon icon-logo-linkedin"></i>
+                    </a>
+                  </Text>
+                  <Text variant="small" className="mt-1">
+                    {ShoaibContent[0]}
+                  </Text>
+                  {readShoaib ? (
+                    <Text variant="small">{ShoaibContent[1]}</Text>
+                  ) : (
+                    ""
+                  )}
+                  {readShoaib ? (
+                    <button onClick={readMoreShoaibData} className="mt-3">
+                      Read Less <i className="icon icon-small-up" />
+                    </button>
+                  ) : (
+                    <button onClick={readMoreShoaibData} className="mt-3">
+                      Read More <i className="icon icon-small-down" />
+                    </button>
+                  )}
+                </FeatureCard>
+              </Col>
+              <Col md="2"></Col>
+              <Col md="4">
+              </Col>
+            </Row>
+          </Col>
+          <Col lg="4" className="order-lg-2">
             <div
               className="feature-content section-title"
               css={`
@@ -218,19 +300,19 @@ const Leadership = () => {
             >
               <Row className="align-items-center ml-4">
                 <Col lg="0" className="order-lg-1 mb-3">
-                  TEAM
+                  OUR
                 </Col>
               </Row>
               <div className="feature-content section-title ml-4">
                 <Title color="black" className="mb-0 ">
-                  Leadership
+                  Advisors
                 </Title>
               </div>
             </div>
-            <ShapeBottomLeft>
+            {/* <ShapeBottomLeft>
               <img src={pattern4} alt="" className="img-fluid" />
-            </ShapeBottomLeft>
-          </Col> */}
+            </ShapeBottomLeft> */}
+          </Col>
         </Row>
       </Section>
     </>

@@ -58,29 +58,32 @@ const Benefits = () => (
             <Title color="black">Merits of myTiro.ai</Title>
           </div>
           <Row className="mt-5">
-            <Col md="6">
+            <Col md="5">
               <FeatureCard imgSrc={benefit1}>
                 Activities to make room <br />
                 in your day for focus
               </FeatureCard>
             </Col>
-            <Col md="6">
+            <Col md="5">
               <FeatureCard imgSrc={benefit4}>
                 Sift through your workload to focus on your priorities.
               </FeatureCard>
             </Col>
-            <Col md="6">
+            <Col md="5">
               <FeatureCard imgSrc={benefit2}>
                 Understand what habits you can change.
               </FeatureCard>
             </Col>
-            <Col md="6">
+            <Col md="5">
               <FeatureCard imgSrc={benefit5}>
                 Helps you achieve better outcomes with greater efficiency.
               </FeatureCard>
             </Col>
-            <Col md="6">
+            <Col md="5">
               <FeatureCard imgSrc={benefit3}>Schedule your tasks.</FeatureCard>
+            </Col>
+            <Col md="5">
+              <FeatureCard imgSrc={benefit3}>Works with existing apps</FeatureCard>
             </Col>
           </Row>
         </Col>

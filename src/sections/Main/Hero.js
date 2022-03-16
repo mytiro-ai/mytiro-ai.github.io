@@ -4,6 +4,7 @@ import { Title, Button, Section, Box, Text } from "../../components/Core";
 
 import topCurve from "../../assets/SVG/Line@2x.svg";
 import Guy from "../../assets/SVG/Banner@2x.svg";
+import Banner_mobile from '../../assets/SVG/Banner_mobile.svg';
 
 const Hero = () => {
   return (
@@ -14,6 +15,7 @@ const Hero = () => {
             src={topCurve}
             alt=""
             className="mt-lg-5 img-fluid position-absolute"
+            id="topcurve-image"
             css={`
               width: 100%;
               position: fixed;
@@ -45,19 +47,24 @@ const Hero = () => {
             >
               An ML driven productivity platform for busy professionals
             </Text>
-            <Button>Get Started</Button>
+            <Button css={`z-index: 1;`}>Get Started</Button>
           </Box>
+        </Container>
+        <Container className="mobile-image-container">
+            <img src={Banner_mobile} width='100%' />
         </Container>
 
         <img
           src={Guy}
           alt=""
           className="img-fluid"
+          id="guy-image"
           css={`
             margin-top: -10rem;
             position: relative;
             width: 100%;
             left: 2em;
+            z-index: 0;
           `}
         />
       </Section>

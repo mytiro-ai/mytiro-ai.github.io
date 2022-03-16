@@ -14,6 +14,8 @@ const Green = () => {
           background-image: url(${green});
           background-size: cover;
           width: 100%;
+          z-index: 1;
+          margin-bottom: 5%;
         `}
         className="position-relative overflow-hidden"
       >

@@ -1,6 +1,6 @@
 // Override default variables before the import
 
-$primary: #495fef;
+$primary: #7B46B5;
 $secondary: #f5f5f7;
 $success: #56b381;
 $bg: #ffffff;
@@ -15,11 +15,17 @@ $font-family-base: "Inter", sans-serif;
 $headings-font-family: $font-family-base;
 $headings-font-weight: 700;
 
+$sm: 576px; //Small screen start
+$md: 768px; //Medium screen start
+$lg: 992px; //Large screen start
+$xl: 1200px; //Extra Large screen start
+
 //Import font
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
+
 
 .has-offcanvas {
   width: 100%;
@@ -43,4 +49,48 @@ $headings-font-weight: 700;
 .modal,
 .modal-backdrop {
   z-index: 99999 !important;
+}
+
+.mt-3 {
+  color: $primary;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: $md) {
+  .navbar {
+    padding: 1% 0;
+  }
+}
+
+@media only screen and (max-width: $lg) {
+  #topcurve-image{
+    display: none;
+  }
+  
+  #guy-image{
+    display: none;
+  }
+
+  #green-pattern-image{
+    position: absolute;
+    top: 1200px;
+    left: -400px;
+  }
+  #yellow-pattern-image{
+    position: absolute;
+    right: -150px;
+  }
+
+  #our-advisors-container{
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (min-width: $lg) {
+  .mobile-image-container {
+    display: none;
+  }
 }

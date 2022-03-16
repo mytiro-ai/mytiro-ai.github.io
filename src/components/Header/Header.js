@@ -35,6 +35,12 @@ const SiteHeader = styled.header`
     }
   }
 
+  .navbar{
+    @media ${device.md}{
+      padding: 0 0;
+    }
+  }
+
   /* Bounce To Left */
   .hvr-bounce-to-left {
     display: inline-block;
@@ -359,6 +365,7 @@ const Header = ({ isDark = false }) => {
               aria-label="Toggle navigation"
               onClick={gContext.toggleOffCanvas}
               dark={isDark ? 1 : 0}
+              style={{marginLeft: 'auto'}}
             >
               {/* <i className="icon icon-simple-remove icon-close"></i> */}
               <i className="icon icon-menu-34 icon-burger d-block"></i>

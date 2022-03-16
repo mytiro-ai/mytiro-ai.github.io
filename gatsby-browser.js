@@ -1,6 +1,7 @@
 import React from "react";
 import { GlobalProvider } from "./src/context/GlobalContext";
 import Layout from "./src/components/Layout";
+import './globalstyles.css';
 
 export const wrapPageElement = ({ element, props }) => {
   // props provide same data to Layout as Page element will get
