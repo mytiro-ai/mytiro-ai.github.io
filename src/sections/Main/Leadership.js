@@ -18,7 +18,7 @@ const ShapeBottomLeft = styled(Box)`
 `;
 
 const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
-  <Box bg="light" borderRadius={10} mb={4} {...rest} css={{height: '700px', overflow: 'visible'}}>
+  <Box bg="light" borderRadius={10} mb={4} {...rest} css={{overflow: 'visible'}}>
     <Box
       fontSize="28px"
       className="d-flex justify-content-center align-items-center"
@@ -77,7 +77,6 @@ const Leadership = () => {
         css={`
           margin-left: 2.5em;
           margin-right: 2.5em;
-          min-height: 900px;
         `}
       >
         <img

@@ -31,7 +31,6 @@ const Privacy = () => {
         className="position-relative overflow-hidden"
         id="privacy"
         css={`
-          margin-top: -10em;
           margin-left: 2.5em;
           margin-right: 2.5em;
         `}

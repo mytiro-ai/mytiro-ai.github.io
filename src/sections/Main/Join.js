@@ -9,15 +9,15 @@ import pattern from "../../assets/Png/Pattern_5.png";
 
 const ShapeBottom = styled(Box)`
   position: absolute;
-  bottom: -13.5rem;
+  bottom: -325.5px;
   right: -5em;
-  width: 15%;
+  width: 315px;
 `;
 
 const Join = () => (
   <>
     <Section bg="warning" className="position-relative">
-      <ShapeBottom>
+      <ShapeBottom id="join-pattern">
         <img src={pattern} alt="" className="img-fluid" />
       </ShapeBottom>
       <Container>
@@ -26,16 +26,17 @@ const Join = () => (
             <Box
               mb={5}
               className="text-center d-flex align-items-center justify-content-center"
+              css={{width: '100%'}}
             >
-              <Text color="black" className="mr-4">
+              <Text color="black" css={{width: '150px'}}>
                 JOIN OUR
               </Text>
               <img src={logo} alt="" className="img-fluid" />
-              <Text color="black" className="ml-4">
+              <Text color="black" css={{width: '150px'}}>
                 COMMUNITY
               </Text>
             </Box>
-            <Box className="d-flex flex-column align-items-center text-center mt-5">
+            <Box className="d-flex flex-column align-items-center text-center mt-5" css={{width: '100%'}}>
               <Title className="mb-0">
                 Looking for a technical challenge and meaningful work?
               </Title>

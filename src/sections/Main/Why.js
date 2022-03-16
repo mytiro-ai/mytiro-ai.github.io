@@ -87,6 +87,7 @@ const Why = () => {
         <Container
           css={`
             z-index: -2;
+            padding: 0 0 !important;
           `}
         >
           <Row className="justify-content-center align-items-center">

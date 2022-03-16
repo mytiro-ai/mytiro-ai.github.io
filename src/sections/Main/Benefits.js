@@ -16,14 +16,12 @@ const FeatureCard = ({ imgSrc, children, ...rest }) => (
     <Box
       size="auto"
       borderRadius="50%"
-      fontSize="28px"
       className="d-flex justify-content-center align-items-center"
     >
       <img src={imgSrc} />
     </Box>
     <div>
       <Text
-        fontSize={2}
         lineHeight={1.75}
         className="ml-3"
         css={`

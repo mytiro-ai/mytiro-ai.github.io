@@ -22,7 +22,7 @@ const Green = () => {
         <Container>
           <Row className="">
             <Col lg="3" className="order-lg-1"></Col>
-            <Col md="9" className="order-lg-2">
+            <Col lg="9" className="order-lg-2">
               <Box>
                 <Title
                   color="light"
