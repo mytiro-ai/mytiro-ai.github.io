@@ -18,7 +18,7 @@ const ShapeBottomLeft = styled(Box)`
 `;
 
 const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
-  <Box bg="light" borderRadius={10} mb={4} {...rest} css={{overflow: 'visible'}}>
+  <Box bg="transparent" borderRadius={10} mb={4} {...rest} css={{overflow: 'visible'}}>
     <Box
       fontSize="28px"
       className="d-flex justify-content-center align-items-center"
@@ -83,7 +83,8 @@ const Leadership = () => {
           src={pattern4}
           alt=""
           className="img-fluid"
-          style={{ position: "absolute", top: 100, left: -300 }}
+          id="leadership-pattern"
+          //style={{ position: "absolute", top: 100, left: -300 }}
         />
         <Row className="align-items-flex-start">
           <Col lg="4" className="order-lg-1">

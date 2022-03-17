@@ -66,6 +66,12 @@ $xl: 1200px; //Extra Large screen start
   margin-left: 4%;
 }
 
+#leadership-pattern{
+  position: absolute;
+  top: 100px;
+  left: -300px;
+}
+
 @media only screen and (max-width: $md) {
   .navbar {
     padding: 1% 0;
@@ -73,6 +79,7 @@ $xl: 1200px; //Extra Large screen start
   .leadership-title{
     margin-left: 1%;
   }
+
 }
 
 @media only screen and (max-width: $lg) {
@@ -97,10 +104,27 @@ $xl: 1200px; //Extra Large screen start
   #our-advisors-container{
     flex-direction: column-reverse;
   }
+  
+  #leadership-pattern{
+    position: absolute;
+    top: -150px;
+    left: 500px;
+  }
+
+  .green-banner-mobile{
+    display: flex;
+    flex-direction: column;
+  }
+  .green-banner{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: $lg) {
   .mobile-image-container {
+    display: none;
+  }
+  .green-banner-mobile{
     display: none;
   }
 }

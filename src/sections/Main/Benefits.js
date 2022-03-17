@@ -12,7 +12,7 @@ import benefit4 from "../../assets/SVG/Benefits_4.svg";
 import benefit5 from "../../assets/SVG/Benefits_5.svg";
 
 const FeatureCard = ({ imgSrc, children, ...rest }) => (
-  <Box bg="light" mb={4} {...rest} className="d-flex align-items-center">
+  <Box bg="transparent" mb={4} {...rest} className="d-flex align-items-center">
     <Box
       size="auto"
       borderRadius="50%"
