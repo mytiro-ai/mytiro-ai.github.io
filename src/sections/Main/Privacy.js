@@ -57,7 +57,6 @@ const Privacy = () => {
                     <br/><br/>
                     Make your data work for you. <br /><br/>
                   </Text>
-                  <a style={{fontSize: '16px', color: '#7B46B5'}}>Read more</a>
                   {/* <Text
                     css={`
                       font-weight: 400;
