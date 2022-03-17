@@ -28,11 +28,11 @@ const Join = () => (
               className="text-center d-flex align-items-center justify-content-center"
               css={{width: '100%'}}
             >
-              <Text color="black" css={{width: '150px'}}>
+              <Text color="black" css={{width: '20%'}}>
                 JOIN OUR
               </Text>
               <img src={logo} alt="" className="img-fluid" />
-              <Text color="black" css={{width: '150px'}}>
+              <Text color="black" css={{width: '20%'}}>
                 COMMUNITY
               </Text>
             </Box>

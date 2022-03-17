@@ -32,22 +32,21 @@ const Hero = () => {
       >
         <Container>
           <Box className="d-flex flex-column align-items-center text-center">
-            <Title variant="hero" className="mb-0">
-              Create Time.
-            </Title>
             <Title variant="hero" color="primary">
-              Increase Productivity.
+              Be Mindfully Productive
             </Title>
             <Text
               color="text"
               css={`
-                line-height: 1.5;
+                font-weight: bold;
+                margin-top: 1%;
+                color: #050505
               `}
               mb="2.5rem"
             >
-              An ML driven productivity platform for busy professionals
+              Get benefits of up to 4 hours in a 40-hour work week
             </Text>
-            <Button css={`z-index: 1;`}>Get Started</Button>
+            <Button css={`z-index: 1; margin-top: 10%`}>Get Started</Button>
           </Box>
         </Container>
         <Container className="mobile-image-container">

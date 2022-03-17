@@ -11,11 +11,9 @@ const Privacy = () => {
   const cssClasses = ["read", read ? "readMore graduallyGoDown" : "readLess"];
 
   let Content = [
-    `In your life on the internet, data is always used to divert
-                  your attention away from your priorities. We make sure that
-                  your data is not only absolutely secure but used only to help
-                  you focus. We will never sell your data, or use it without
-                  your permission.`,
+    `Your data is fully encrypted.  No human can access your data. We make sure that your information is used to help you be mindfully productive.  
+
+    Make your data work for you.`,
     `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Maecenas blandit placerat massa non ultrices. Suspendisse
                     pellentesque faucibus est, sed vehicula metus facilisis ac.
@@ -44,21 +42,10 @@ const Privacy = () => {
                 </Col>
               </Row>
               <div className="feature-content section-title">
-                <Title color="black" className="mb-0">
+                <Title color="black" className="mb-0" css={{margin: '5% 0'}}>
                   End-to-end security
                 </Title>
-                <Text
-                  color="primary"
-                  variant="strong"
-                  css={`
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 30px;
-                  `}
-                >
-                  We believe in 100% data privacy
-                </Text>
-                <div className="mt-3">
+                <div className="mt-5">
                   <Text
                     css={`
                       font-weight: 400;
@@ -66,8 +53,11 @@ const Privacy = () => {
                       line-height: 30px;
                     `}
                   >
-                    {Content[0]}
+                    Your data is fully encrypted.  No human can access your data. We make sure that your information is used to help you be mindfully productive.
+                    <br/><br/>
+                    Make your data work for you. <br /><br/>
                   </Text>
+                  <a style={{fontSize: '16px', color: '#7B46B5'}}>Read more</a>
                   {/* <Text
                     css={`
                       font-weight: 400;

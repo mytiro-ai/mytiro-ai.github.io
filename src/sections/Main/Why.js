@@ -65,7 +65,7 @@ const Why = () => {
   return (
     <>
       <ShapeBottomLeft id="green-pattern-image">
-        <img src={greenPattern} alt="" className="img-fluid"/>
+        <img src={greenPattern} alt="" className="img-fluid" />
       </ShapeBottomLeft>
       <Section
         className="position-relative"
@@ -76,8 +76,8 @@ const Why = () => {
           z-index: 1;
         `}
       >
-        <ShapeTopRight  id="yellow-pattern-image">
-          <img src={yellowPattern} alt="" className="img-fluid"/>
+        <ShapeTopRight id="yellow-pattern-image">
+          <img src={yellowPattern} alt="" className="img-fluid" />
         </ShapeTopRight>
 
         {/* <ShapeBottomLeft>
@@ -92,7 +92,7 @@ const Why = () => {
         >
           <Row className="justify-content-center align-items-center">
             <Col lg="9" className="order-lg-1 mb-3">
-              WHY WE ARE
+              WHAT WE DO
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -119,9 +119,11 @@ const Why = () => {
                     }
                   `}
                 >
-                  Our work is to understand <span style={{whiteSpace: 'nowrap'}}>you -</span>
+                  Our work is to understand{" "}
+                  <span style={{ whiteSpace: "nowrap" }}>you -</span>
                   <br />
-                  your  <span
+                  your{" "}
+                  <span
                     css={`
                       color: #643992;
                     `}
@@ -130,8 +132,11 @@ const Why = () => {
                   </span>
                 </Text>{" "}
                 <div>
-                  <Text>{Content[0]}</Text>
-                  <Text>{Content[1]}</Text>
+                  <Text>
+                    You have many decisions to make each day - emails, phone
+                    calls, meetings, and lists. Spot the spaces for the focused,
+                    productive work you wish to accomplish.{" "}
+                  </Text>
                   {/* <Text>{read ? Content[1] : ""}</Text>
                   {read ? (
                     <button onClick={readMoreHandler} className="mt-3">

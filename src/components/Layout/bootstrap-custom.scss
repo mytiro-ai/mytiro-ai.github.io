@@ -51,17 +51,27 @@ $xl: 1200px; //Extra Large screen start
   z-index: 99999 !important;
 }
 
-.mt-3 {
+
+.readmore-button {
   color: $primary;
   background-color: transparent;
   box-shadow: none;
   border: 0;
   font-weight: 500;
+  margin-top: 3%;
+}
+
+.leadership-title{
+  align-items: center;
+  margin-left: 4%;
 }
 
 @media only screen and (max-width: $md) {
   .navbar {
     padding: 1% 0;
+  }
+  .leadership-title{
+    margin-left: 1%;
   }
 }
 
@@ -93,4 +103,7 @@ $xl: 1200px; //Extra Large screen start
   .mobile-image-container {
     display: none;
   }
+}
+
+@media only screen and (max-width: $sm) {
 }

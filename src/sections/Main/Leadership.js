@@ -85,20 +85,17 @@ const Leadership = () => {
           className="img-fluid"
           style={{ position: "absolute", top: 100, left: -300 }}
         />
-        <Row className="align-items-center">
+        <Row className="align-items-flex-start">
           <Col lg="4" className="order-lg-1">
             <div
               className="feature-content section-title"
-              css={`
-                margin-top: -12rem;
-              `}
             >
-              <Row className="align-items-center ml-4">
+              <Row className="leadership-title">
                 <Col lg="0" className="order-lg-1 mb-3">
                   TEAM
                 </Col>
               </Row>
-              <div className="feature-content section-title ml-4">
+              <div className="feature-content section-title leadership-title">
                 <Title color="black" className="mb-0 ">
                   Leadership
                 </Title>
@@ -150,11 +147,11 @@ const Leadership = () => {
                     ""
                   )}
                   {readShoaib ? (
-                    <button onClick={readMoreShoaibData} className="mt-3">
+                    <button onClick={readMoreShoaibData} className="readmore-button">
                       Read Less <i className="icon icon-small-up" />
                     </button>
                   ) : (
-                    <button onClick={readMoreShoaibData} className="mt-3">
+                    <button onClick={readMoreShoaibData} className="readmore-button">
                       Read More <i className="icon icon-small-down" />
                     </button>
                   )}
@@ -199,11 +196,11 @@ const Leadership = () => {
                     ""
                   )}
                   {readRajeev ? (
-                    <button onClick={readMoreRajeevData} className="mt-3" css={{zIndex: 2}}>
+                    <button onClick={readMoreRajeevData} className="readmore-button" css={{zIndex: 2}}>
                       Read Less <i className="icon icon-small-up" />
                     </button>
                   ) : (
-                    <button onClick={readMoreRajeevData} className="mt-3">
+                    <button onClick={readMoreRajeevData} className="readmore-button">
                       Read More <i className="icon icon-small-down" />
                     </button>
                   )}
@@ -220,9 +217,6 @@ const Leadership = () => {
         css={`
           margin-left: 2.5em;
           margin-right: 2.5em;
-          display: flex;
-          flex-direction: column;
-          justifyItems: baseline;
           height: auto;
         `}
       >
@@ -275,11 +269,11 @@ const Leadership = () => {
                     ""
                   )}
                   {readShoaib ? (
-                    <button onClick={readMoreShoaibData} className="mt-3">
+                    <button onClick={readMoreShoaibData} className="readmore-button">
                       Read Less <i className="icon icon-small-up" />
                     </button>
                   ) : (
-                    <button onClick={readMoreShoaibData} className="mt-3">
+                    <button onClick={readMoreShoaibData} className="readmore-button">
                       Read More <i className="icon icon-small-down" />
                     </button>
                   )}
@@ -293,16 +287,13 @@ const Leadership = () => {
           <Col lg="4" className="order-lg-2">
             <div
               className="feature-content section-title"
-              css={`
-                margin-top: -12rem;
-              `}
             >
-              <Row className="align-items-center ml-4">
+              <Row className="leadership-title">
                 <Col lg="0" className="order-lg-1 mb-3">
                   OUR
                 </Col>
               </Row>
-              <div className="feature-content section-title ml-4">
+              <div className="feature-content section-title leadership-title">
                 <Title color="black" className="mb-0 ">
                   Advisors
                 </Title>
