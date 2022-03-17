@@ -225,7 +225,7 @@ const Leadership = () => {
           src={pattern4}
           alt=""
           className="img-fluid"
-          id="leadership-pattern"
+          id="leadership-pattern-advisors"
           style={{ position: "absolute", top: 100, right: -300 }}
         />
         <Row className="align-items-center" id="our-advisors-container">
