@@ -179,7 +179,7 @@ const Footer = ({ isDark = true }) => {
                       </Col>
                     </Row>
                     <Col className="text-sm-left text-center mb-2 mb-sm-0">
-                      <p>&copy; 2022 Mytiro.ai, All Rights Reserved</p>
+                      <p>&copy; 2022 myTiro.ai, All Rights Reserved</p>
                     </Col>
                   </CopyRightArea>
                 </Col>

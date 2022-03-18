@@ -62,7 +62,7 @@ const Benefits = () => (
             <Col md="5">
               <FeatureCard imgSrc={benefit1}>
                 Single Source of Truth <br />
-                About your activities
+                about your activities
               </FeatureCard>
             </Col>
             <Col md="5">
@@ -72,7 +72,7 @@ const Benefits = () => (
             </Col>
             <Col md="5">
               <FeatureCard imgSrc={benefit2}>
-                Insights to create time <br/> and increase your focuse
+                Insights to create time <br/> and increase your focus
               </FeatureCard>
             </Col>
             <Col md="5">

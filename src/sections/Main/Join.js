@@ -38,7 +38,7 @@ const Join = () => (
             </Box>
             <Box className="d-flex flex-column align-items-center text-center mt-5" css={{width: '100%'}}>
               <Title className="mb-0">
-                Looking for a technical challenge and meaningful work?
+                Looking for a technical challenge<br/> and meaningful work?
               </Title>
               <Button bg="black" className="mt-5">
                 Join Us
