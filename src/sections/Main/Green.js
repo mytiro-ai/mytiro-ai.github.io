@@ -1,10 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import { Title, Section, Box } from "../../components/Core";
 
-import green from "../../assets/SVG/Image_2.svg";
-import green_image from "../../assets/SVG/green_banner_pattern_image.svg";
-import green_mobile from "../../assets/SVG/Image_2_mobile.svg";
+import green from "../../assets/Png/Image_2.png";
+import green_image from "../../assets/Png/green_banner_pattern_image.png";
+import green_mobile from "../../assets/Png/Image_2_mobile.png";
 
 const getTitle = () => {
   return (

@@ -45,10 +45,10 @@ const Hero = () => {
             >
               Get benefits of up to 4 hours in a 40-hour work week
             </Text>
-            <Button css={`z-index: 1; margin-top: 8%`}>Get Started</Button>
+            <Button className="mt-lg-4" css={`z-index: 1;`}>Get Started</Button>
           </Box>
         </Container>
-        <Container className="mobile-image-container">
+        <Container className="mobile-image-container mt-4">
             <img src={Banner_mobile} width='90%' />
         </Container>
 
