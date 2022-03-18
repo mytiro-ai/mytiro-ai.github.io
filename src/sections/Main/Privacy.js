@@ -29,12 +29,10 @@ const Privacy = () => {
         className="position-relative overflow-hidden"
         id="privacy"
         css={`
-          margin-left: 2.5em;
-          margin-right: 2.5em;
         `}
       >
         <Row className="align-items-center">
-          <Col lg="6" className="pl-lg-5 order-lg-1">
+          <Col lg="6" className="order-lg-1" css={{padding: '0 6% !important'}}>
             <div className="feature-content section-title">
               <Row className="align-items-center">
                 <Col lg="0" className="order-lg-1 mb-3 ml-3">
