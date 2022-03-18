@@ -120,9 +120,15 @@ $xl: 1200px; //Extra Large screen start
   .green-banner-mobile{
     display: flex;
     flex-direction: column;
+    padding-bottom: 3%;
   }
   .green-banner{
     display: none;
+  }
+
+  #purple-pattern{
+    top: 30vh;
+    right: -350px;
   }
 }
 
@@ -133,6 +139,8 @@ $xl: 1200px; //Extra Large screen start
   .green-banner-mobile{
     display: none;
   }
+
+  
 }
 
 @media only screen and (max-width: $sm) {

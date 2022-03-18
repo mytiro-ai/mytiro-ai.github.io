@@ -12,15 +12,15 @@ import benefit4 from "../../assets/SVG/Benefits_4.svg";
 import benefit5 from "../../assets/SVG/Benefits_5.svg";
 
 const FeatureCard = ({ imgSrc, children, ...rest }) => (
-  <Box bg="transparent" mb={4} {...rest} className="d-flex align-items-baseline">
+  <Box bg="transparent" mb={4} {...rest} className="d-flex align-items-baseline justify-content">
     <Row>
       <Col
-        md={1}
+        sm={1}
         borderRadius="50%"
       >
           <img src={imgSrc} className="mt-1"/>
       </Col>
-      <Col md={10}>
+      <Col sm={10}>
         <Box >
           <Text
             lineHeight={1.75}
@@ -44,8 +44,7 @@ const Benefits = () => (
       className="position-relative"
       id="benefits"
       css={`
-        margin-left: 2.5em;
-        margin-right: 2.5em;
+      margin: 0 4%;
       `}
     >
       <Row className="align-items-center">
@@ -59,31 +58,31 @@ const Benefits = () => (
             <Title color="black">Merits of myTiro.ai</Title>
           </div>
           <Row className="mt-5">
-            <Col md="5">
+            <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit1}>
                 Single Source of Truth <br />
                 about your activities
               </FeatureCard>
             </Col>
-            <Col md="5">
+            <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit4}>
                 Identifies your goals
               </FeatureCard>
             </Col>
-            <Col md="5">
+            <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit2}>
                 Insights to create time <br/> and increase your focus
               </FeatureCard>
             </Col>
-            <Col md="5">
+            <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit5}>
                 Tracks your benefits
               </FeatureCard>
             </Col>
-            <Col md="5">
+            <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit3}>Daily productivity tips</FeatureCard>
             </Col>
-            <Col md="5">
+            <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit3}>Works with existing apps</FeatureCard>
             </Col>
           </Row>

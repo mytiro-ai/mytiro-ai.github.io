@@ -16,7 +16,7 @@ const ShapeTopRight = styled(Box)`
 const Purple = () => (
   <>
     <div className="position-relative">
-      <ShapeTopRight>
+      <ShapeTopRight id="purple-pattern">
         <img src={purplePattern} alt="" className="img-fluid" />
       </ShapeTopRight>
     </div>
@@ -28,7 +28,7 @@ const Purple = () => (
         z-index: 1;
         height: 3.6em;
       `}
-      className="position-relative ml-5 mr-5 rounded custom-purple img-fluid d-flex-column align-items-center justify-content-center"
+      className="position-relative ml-4 mr-4 rounded custom-purple img-fluid d-flex-column align-items-center justify-content-center"
     >
         <Box className="d-flex flex-column align-items-center text-center">
           <Col lg="6" className="order-lg-1">

@@ -72,8 +72,13 @@ const Why = () => {
         id="why"
         css={`
           margin-top: -2.6em;
-          margin-bottom: 7.8em;
           z-index: 1;
+          @media ${device.lg} {
+            margin-bottom: 7.8em;
+          }
+          @media only screen and( min-width: ${device.md}) {
+            margin-bottom: 2.8em;
+          }
         `}
       >
         <ShapeTopRight id="yellow-pattern-image">
@@ -87,7 +92,6 @@ const Why = () => {
         <Container
           css={`
             z-index: -2;
-            padding: 0 0 !important;
           `}
         >
           <Row className="justify-content-center align-items-center">
