@@ -285,10 +285,10 @@ const Header = ({ isDark = false }) => {
         }`}
         dark={isDark ? 1 : 0}
       >
-        <Container fluid>
+        <Container fluid css={{padding: '0 2% !important'}}>
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
             <div
-              className="brand-logo ml-4"
+              className="brand-logo"
               css={`
                 width: 160px;
                 height: 40px;

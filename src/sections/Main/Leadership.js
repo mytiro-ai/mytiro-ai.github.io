@@ -37,6 +37,7 @@ const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
 const Leadership = () => {
   const [readShoaib, setReadShoaib] = useState(false);
   const [readRajeev, setReadRajeev] = useState(false);
+  const [readJeniffer, setReadJeniffer] = useState(false);
 
   const ShoaibContent = [
     `Shoaib learned to code when he was 10 years old. Ever since,
@@ -69,6 +70,10 @@ const Leadership = () => {
   const readMoreRajeevData = () => {
     setReadRajeev(!readRajeev);
   };
+  const readMoreJenifferData = () => {
+    setReadJeniffer(!readJeniffer);
+  };
+
   return (
     <>
       <Section
@@ -228,7 +233,7 @@ const Leadership = () => {
           id="leadership-pattern-advisors"
           style={{ position: "absolute", top: 100, right: -300 }}
         />
-        <Row className="align-items-center" id="our-advisors-container">
+        <Row id="our-advisors-container">
         <Col lg="8" className="pl-lg-5 order-lg-1">
             <Row>
               <Col md="1"></Col>
@@ -265,17 +270,17 @@ const Leadership = () => {
                   <Text variant="small" className="mt-1">
                     {ShoaibContent[0]}
                   </Text>
-                  {readShoaib ? (
+                  {readJeniffer ? (
                     <Text variant="small">{ShoaibContent[1]}</Text>
                   ) : (
                     ""
                   )}
                   {readShoaib ? (
-                    <button onClick={readMoreShoaibData} className="readmore-button">
+                    <button onClick={readMoreJenifferData} className="readmore-button">
                       Read Less <i className="icon icon-small-up" />
                     </button>
                   ) : (
-                    <button onClick={readMoreShoaibData} className="readmore-button">
+                    <button onClick={readMoreJenifferData} className="readmore-button">
                       Read More <i className="icon icon-small-down" />
                     </button>
                   )}

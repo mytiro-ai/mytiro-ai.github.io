@@ -3,20 +3,23 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Section, Box } from "../../components/Core";
 
 import green from "../../assets/SVG/Image_2.svg";
+import green_image from "../../assets/SVG/green_banner_pattern_image.svg";
 import green_mobile from "../../assets/SVG/Image_2_mobile.svg";
 
 const getTitle = () => {
-  return (<Title
-            color="light"
-            css={`
-              line-height: 54px;
-              font-size: 50px;
-            `}
-          >
-            There is no right or wrong way to find productivity. <br /> <br/>
-            myTiro helps you choose your path to productivity, one day at a time
-    </Title>)
-}
+  return (
+    <Title
+      color="light"
+      css={`
+        line-height: 54px;
+        font-size: 50px;
+      `}
+    >
+      There is no right or wrong way to find productivity. <br /> <br />
+      myTiro helps you choose your path to productivity, one day at a time
+    </Title>
+  );
+};
 
 const Green = () => {
   return (
@@ -34,7 +37,7 @@ const Green = () => {
         `}
         className="position-relative overflow-hidden green-banner-mobile"
       >
-        <Box css={{ height: "55%", minHeight: '100vw' }}></Box>
+        <Box css={{ height: "55%", minHeight: "100vw" }}></Box>
         <Box>
           {getTitle()}
           {/* <Text
@@ -61,16 +64,33 @@ const Green = () => {
         `}
         className="position-relative overflow-hidden green-banner"
       >
-        <Container>
-          <Row className="green-banner-horizontal">
-            <Col lg="3" className="order-lg-1"></Col>
-            <Col lg="9" className="order-lg-2">
-              <Box>
-                {getTitle()}
-              </Box>
-            </Col>
-          </Row>
-        </Container>
+        <div className="d-flex flex-row align-items-center" style={{height: '400px', position: 'relative'}}>
+          <div style={{ height: "100%", width: '20%', overflow: 'visible'}}>
+            <img
+              src={green_image}
+              style={{ position: "absolute", left: '-370px', top: '-250px' }}
+            />
+          </div>
+          <div style={{maxHeight: '400px', padding: "0 4%", marginLeft: "max(10%, 400px)"}}>
+              {getTitle()}
+          </div>
+        </div>
+        {/* <Row className="green-banner-horizontal">
+          <Col lg="2" className="order-lg-1">
+            <div style={{ height: "100%", maxHeight: "100%" }}>
+              <img
+                src={green_image}
+                width="250%"
+                style={{ position: "relative", minHeight: "100%" }}
+              />
+            </div>
+          </Col>
+          <Col lg="10" className="order-lg-2">
+            <div style={{ padding: "0 4%", marginLeft: "4%" }}>
+              {getTitle()}
+            </div>
+          </Col>
+        </Row> */}
       </Section>
     </>
   );
