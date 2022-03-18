@@ -15,12 +15,12 @@ const FeatureCard = ({ imgSrc, children, ...rest }) => (
   <Box bg="transparent" mb={4} {...rest} className="d-flex align-items-baseline justify-content">
     <Row>
       <Col
-        sm={1}
+        xs={1}
         borderRadius="50%"
       >
           <img src={imgSrc} className="mt-1"/>
       </Col>
-      <Col sm={10}>
+      <Col xs={10}>
         <Box >
           <Text
             lineHeight={1.75}
