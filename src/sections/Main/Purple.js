@@ -26,19 +26,18 @@ const Purple = () => (
         background-image: url(${purple});
         background-size: cover;
         z-index: 1;
+        height: 3.6em;
       `}
-      className="position-relative overflow-hidden ml-5 mr-5 rounded custom-purple img-fluid"
+      className="position-relative ml-5 mr-5 rounded custom-purple img-fluid d-flex-column align-items-center justify-content-center"
     >
-      <Container>
-        <Box className="d-flex flex-column align-items-center text-center mt-5">
-          <Col lg="9" className="order-lg-1">
+        <Box className="d-flex flex-column align-items-center text-center">
+          <Col lg="6" className="order-lg-1">
             <Title color="light">
               At myTiro.ai, we help you understand what your time really looks
               like
             </Title>
           </Col>
         </Box>
-      </Container>
     </Section>
   </>
 );

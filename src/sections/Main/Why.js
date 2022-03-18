@@ -64,7 +64,7 @@ const Why = () => {
   // };
   return (
     <>
-      <ShapeBottomLeft id="green-pattern-image">
+      <ShapeBottomLeft id="green-pattern-image" css={{position: 'absolute', bottom: '-90vh', left: '-300px'}}>
         <img src={greenPattern} alt="" className="img-fluid" />
       </ShapeBottomLeft>
       <Section
@@ -119,7 +119,7 @@ const Why = () => {
                     }
                   `}
                 >
-                  Our work is to understand{" "}
+                  We understand{" "}
                   <span style={{ whiteSpace: "nowrap" }}>you -</span>
                   <br />
                   your{" "}

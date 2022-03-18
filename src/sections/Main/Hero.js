@@ -31,14 +31,13 @@ const Hero = () => {
         `}
       >
         <Container>
-          <Box className="d-flex flex-column align-items-center text-center">
+          <Box className="d-flex flex-column align-items-center text-center mt-4">
             <Title variant="hero" color="primary">
               Be Mindfully Productive
             </Title>
             <Text
               color="text"
               css={`
-                font-weight: bold;
                 margin-top: 1%;
                 color: #050505
               `}
@@ -46,11 +45,11 @@ const Hero = () => {
             >
               Get benefits of up to 4 hours in a 40-hour work week
             </Text>
-            <Button css={`z-index: 1; margin-top: 10%`}>Get Started</Button>
+            <Button css={`z-index: 1; margin-top: 8%`}>Get Started</Button>
           </Box>
         </Container>
         <Container className="mobile-image-container">
-            <img src={Banner_mobile} width='100%' />
+            <img src={Banner_mobile} width='90%' />
         </Container>
 
         <img
@@ -59,9 +58,9 @@ const Hero = () => {
           className="img-fluid"
           id="guy-image"
           css={`
-            margin-top: -10rem;
+            margin-top: -11rem;
             position: relative;
-            width: 100%;
+            width: 96%;
             left: 2em;
             z-index: 0;
           `}

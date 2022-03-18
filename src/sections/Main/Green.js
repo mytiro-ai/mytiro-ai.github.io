@@ -1,11 +1,22 @@
 import React from "react";
-import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
-import { Title, Section, Box, Text } from "../../components/Core";
-import { device } from "../../utils";
+import { Title, Section, Box } from "../../components/Core";
 
-import green from "../../assets/Png/Image_2.png";
+import green from "../../assets/SVG/Image_2.svg";
 import green_mobile from "../../assets/SVG/Image_2_mobile.svg";
+
+const getTitle = () => {
+  return (<Title
+            color="light"
+            css={`
+              line-height: 54px;
+              font-size: 50px;
+            `}
+          >
+            There is no right or wrong way to find productivity. <br /> <br/>
+            myTiro helps you choose your path to productivity, one day at a time
+    </Title>)
+}
 
 const Green = () => {
   return (
@@ -25,17 +36,8 @@ const Green = () => {
       >
         <Box css={{ height: "55%", minHeight: '100vw' }}></Box>
         <Box>
-          <Title
-            color="light"
-            css={`
-              line-height: 54px;
-              font-size: 50px;
-            `}
-          >
-            And we believe that there is no wrong way to find productivity -
-            only more opportunities to find focus
-          </Title>
-          <Text
+          {getTitle()}
+          {/* <Text
             mb={4}
             color="light"
             opacity={0.7}
@@ -46,7 +48,7 @@ const Green = () => {
           >
             We believe that it is by understanding your own patterns that you
             can find the best solutions that truly work for you
-          </Text>
+          </Text> */}
         </Box>
       </Section>
       <Section
@@ -64,28 +66,7 @@ const Green = () => {
             <Col lg="3" className="order-lg-1"></Col>
             <Col lg="9" className="order-lg-2">
               <Box>
-                <Title
-                  color="light"
-                  css={`
-                    line-height: 54px;
-                    font-size: 50px;
-                  `}
-                >
-                  And we believe that there is no wrong way to find productivity
-                  - only more opportunities to find focus
-                </Title>
-                <Text
-                  mb={4}
-                  color="light"
-                  opacity={0.7}
-                  css={`
-                    line-height: 30px;
-                    font-size: 20px;
-                  `}
-                >
-                  We believe that it is by understanding your own patterns that
-                  you can find the best solutions that truly work for you
-                </Text>
+                {getTitle()}
               </Box>
             </Col>
           </Row>

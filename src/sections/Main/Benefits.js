@@ -12,26 +12,29 @@ import benefit4 from "../../assets/SVG/Benefits_4.svg";
 import benefit5 from "../../assets/SVG/Benefits_5.svg";
 
 const FeatureCard = ({ imgSrc, children, ...rest }) => (
-  <Box bg="transparent" mb={4} {...rest} className="d-flex align-items-center">
-    <Box
-      size="auto"
-      borderRadius="50%"
-      className="d-flex justify-content-center align-items-center"
-    >
-      <img src={imgSrc} />
-    </Box>
-    <div>
-      <Text
-        lineHeight={1.75}
-        className="ml-3"
-        css={`
-          color: #000;
-          font-weight: 500;
-        `}
+  <Box bg="transparent" mb={4} {...rest} className="d-flex align-items-baseline">
+    <Row>
+      <Col
+        md={1}
+        borderRadius="50%"
       >
-        {children}
-      </Text>
-    </div>
+          <img src={imgSrc} className="mt-1"/>
+      </Col>
+      <Col md={10}>
+        <Box >
+          <Text
+            lineHeight={1.75}
+            className="ml-3 featurecard-text"
+            css={{
+              color: "#000",
+              fontWeight: "500",
+            }}
+          >
+            {children}
+          </Text>
+        </Box>
+      </Col>
+    </Row>
   </Box>
 );
 
@@ -58,27 +61,27 @@ const Benefits = () => (
           <Row className="mt-5">
             <Col md="5">
               <FeatureCard imgSrc={benefit1}>
-                Activities to make room <br />
-                in your day for focus
+                Single Source of Truth <br />
+                About your activities
               </FeatureCard>
             </Col>
             <Col md="5">
               <FeatureCard imgSrc={benefit4}>
-                Sift through your workload to focus on your priorities.
+                Identifies your goals
               </FeatureCard>
             </Col>
             <Col md="5">
               <FeatureCard imgSrc={benefit2}>
-                Understand what habits you can change.
+                Insights to create time <br/> and increase your focuse
               </FeatureCard>
             </Col>
             <Col md="5">
               <FeatureCard imgSrc={benefit5}>
-                Helps you achieve better outcomes with greater efficiency.
+                Tracks your benefits
               </FeatureCard>
             </Col>
             <Col md="5">
-              <FeatureCard imgSrc={benefit3}>Schedule your tasks.</FeatureCard>
+              <FeatureCard imgSrc={benefit3}>Daily productivity tips</FeatureCard>
             </Col>
             <Col md="5">
               <FeatureCard imgSrc={benefit3}>Works with existing apps</FeatureCard>
