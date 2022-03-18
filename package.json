@@ -1,8 +1,8 @@
 {
   "name": "mytiro",
-  "description": "",
+  "description": "myTiro.ai Static Website",
   "version": "1.0.0",
-  "author": "Brihadeesh R K",
+  "author": "myTiro.ai",
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^1.0.43",
     "aos": "^3.0.0-beta.6",
@@ -45,7 +45,6 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "main": "n/a",
   "scripts": {
     "start": "yarn develop",
