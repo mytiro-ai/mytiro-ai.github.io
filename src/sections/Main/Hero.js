@@ -58,7 +58,7 @@ const Hero = () => {
           className="img-fluid"
           id="guy-image"
           css={`
-            margin-top: -6rem;
+            margin-top: -5rem;
             position: relative;
             width: 96%;
             left: 2em;

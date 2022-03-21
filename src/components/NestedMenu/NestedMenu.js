@@ -12,7 +12,7 @@ const NestedMenuContainer = styled.div`
     color: ${({ theme }) => theme.colors.dark} !important;
     transition: all 0.3s ease-out;
     font-weight: 700;
-    text-transform: lowercase;
+    text-transform: capitalize;
 
     &:hover,
     &:active {
@@ -23,7 +23,7 @@ const NestedMenuContainer = styled.div`
 
   .list-group-item {
     font-weight: 700;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: ${({ theme }) => theme.colors.dark};
     &:hover,
     &:active,

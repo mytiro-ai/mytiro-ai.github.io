@@ -1,7 +1,7 @@
 export const menuItems = [
   {
     name: "why",
-    label: "Why we are",
+    label: "What we do",
   },
   {
     name: "benefits",
