@@ -28,11 +28,13 @@ const Join = () => (
               className="text-center d-flex align-items-center justify-content-center"
               css={{width: '100%'}}
             >
-              <Text color="black" css={{width: '20%'}}>
+              <Text color="black" css={{width: '100%', textAlign: 'right'}}>
                 JOIN OUR
               </Text>
-              <img src={logo} alt="" className="img-fluid" />
-              <Text color="black" css={{width: '20%'}}>
+              <div style={{width: 'max(10.3vw, 100px)', height: "max(10.3vw, 100px)", display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: '0 3%'}}>
+                <img src={logo} alt="" height="100%"/>
+              </div>
+              <Text color="black" css={{width: '100%', textAlign: 'left', wordBreak:"break-word"}}>
                 COMMUNITY
               </Text>
             </Box>
