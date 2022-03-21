@@ -24,7 +24,6 @@ const Purple = () => (
         background-image: url(${purple});
         background-size: cover;
         z-index: 1;
-        height: 3.6em;
         padding: 2% 6%;
         border-radius: 32px;
         margin: 0 4%;
