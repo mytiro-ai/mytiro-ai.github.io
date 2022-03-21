@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 
 import topCurve from "../../assets/SVG/Line@2x.svg";
-import Guy from "../../assets/SVG/Banner@2x.svg";
+import Guy from "../../assets/SVG/Banner.svg";
 import Banner_mobile from '../../assets/SVG/Banner_mobile.svg';
 
 const Hero = () => {
@@ -58,9 +58,9 @@ const Hero = () => {
           className="img-fluid"
           id="guy-image"
           css={`
-            margin-top: -8rem;
+            margin-top: -6rem;
             position: relative;
-            width: 98%;
+            width: 96%;
             left: 2em;
             z-index: 0;
           `}
