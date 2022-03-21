@@ -14,7 +14,7 @@ const Hero = () => {
           <img
             src={topCurve}
             alt=""
-            className="mt-lg-5 img-fluid position-absolute"
+            className="mt-lg-4 img-fluid position-absolute"
             id="topcurve-image"
             css={`
               width: 100%;
@@ -58,9 +58,9 @@ const Hero = () => {
           className="img-fluid"
           id="guy-image"
           css={`
-            margin-top: -11rem;
+            margin-top: -8rem;
             position: relative;
-            width: 96%;
+            width: 98%;
             left: 2em;
             z-index: 0;
           `}
