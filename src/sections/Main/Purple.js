@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import "./Purple.css";
 import { Title, Section, Box } from "../../components/Core";
-
+import { device } from "../../utils";
 import purplePattern from "../../assets/SVG/Pattern_3@2x.svg";
 import purple from "../../assets/Png/Image_1@2x.png";
 
@@ -27,8 +26,14 @@ const Purple = () => (
         z-index: 1;
         height: 3.6em;
         padding: 2% 6%;
+        border-radius: 32px;
+        margin: 0 4%;
+        overflow: hidden;
+        @media ${device.md} {
+          padding: 11% 6%;
+        }
       `}
-      className="position-relative ml-4 mr-4 rounded custom-purple img-fluid d-flex-column align-items-center justify-content-center"
+      className="position-relative img-fluid d-flex-column align-items-center justify-content-center"
     >
       <div className="d-flex flex-column justify-content-center align-items-center">
         <Title color="light">

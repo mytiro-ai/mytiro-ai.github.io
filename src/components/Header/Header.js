@@ -347,10 +347,10 @@ const Header = ({ isDark = false }) => {
             </div>
             <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
               <Link href="/">
-                <a className="ml-lg-5 mr-lg-1">Sign in</a>
+                <a className="ml-lg-5 ">Sign in</a>
               </Link>
               <Link href="/">
-                <Button className="ml-lg-3">Join us</Button>
+                <Button >Join us</Button>
               </Link>
             </div>
             <ToggleButton
