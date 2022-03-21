@@ -10,6 +10,7 @@ import benefit2 from "../../assets/SVG/Benefits_2.svg";
 import benefit3 from "../../assets/SVG/Benefits_3.svg";
 import benefit4 from "../../assets/SVG/Benefits_4.svg";
 import benefit5 from "../../assets/SVG/Benefits_5.svg";
+import benefit6 from '../../assets/SVG/Benefits_6.svg';
 
 const FeatureCard = ({ imgSrc, children, ...rest }) => (
   <Box bg="transparent" mb={4} {...rest} className="d-flex align-items-baseline justify-content">
@@ -82,7 +83,7 @@ const Benefits = () => (
               <FeatureCard imgSrc={benefit3}>Daily productivity tips</FeatureCard>
             </Col>
             <Col md="6" sm="12">
-              <FeatureCard imgSrc={benefit3}>Works with existing apps</FeatureCard>
+              <FeatureCard imgSrc={benefit6}>Works with existing apps</FeatureCard>
             </Col>
           </Row>
         </Col>

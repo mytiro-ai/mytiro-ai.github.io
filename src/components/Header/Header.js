@@ -347,7 +347,7 @@ const Header = ({ isDark = false }) => {
             </div>
             <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
               <Link href="/">
-                <a className="ml-lg-5 ">Sign in</a>
+                <a className="ml-lg-5 " style={{color: '#7B46B5!important', fontWeight: 'bold'}}>Sign in</a>
               </Link>
               <Link href="/">
                 <Button className="ml-md-3" >Join us</Button>
