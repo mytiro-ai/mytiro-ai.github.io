@@ -4,7 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Box } from "../Core";
 import Logo from "../Logo";
 import { Link as ScrollLink } from "react-scroll";
-import pattern from "../../assets/Png/Pattern_5.png";
+
+import fb_logo from "../../assets/SVG/facebook_icon.svg";
+import ig_logo from "../../assets/SVG/Instagram Default.svg";
+import linkedin_logo from "../../assets/SVG/LinkedIn Default.svg";
 
 const UlStyled = styled.ul`
   margin-left: 1em;
@@ -156,29 +159,29 @@ const Footer = ({ isDark = true }) => {
                 <Col xs="6" lg="3"></Col>
                 <Col xs="6" lg="3">
                   <CopyRightArea dark={isDark ? 1 : 0}>
-                    <Row className="align-items-left">
-                      <Col sm="6" className="text-sm-right text-center">
+                    <Row className="align-items-left ml-1">
+                      <Col sm="6" className="text-sm-left">
                         <ul className="social-icons">
                           <li>
                             <a href="/#" target="_blank">
-                              <i className="icon icon-logo-facebook"></i>
+                              <img src={fb_logo}/>
                             </a>
                           </li>
 
                           <li>
                             <a href="/#" target="_blank">
-                              <i className="icon icon-logo-linkedin"></i>
+                            <img src={ig_logo}/>
                             </a>
                           </li>
                           <li>
                             <a href="/#" target="_blank">
-                              <i className="icon icon-logo-instagram"></i>
+                            <img src={linkedin_logo}/>
                             </a>
                           </li>
                         </ul>
                       </Col>
                     </Row>
-                    <Col className="text-sm-left text-center mb-2 mb-sm-0">
+                    <Col className="text-sm-left mb-sm-0">
                       <p>&copy; 2022 myTiro.ai, All Rights Reserved</p>
                     </Col>
                   </CopyRightArea>

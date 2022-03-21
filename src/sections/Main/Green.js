@@ -32,7 +32,7 @@ const Green = () => {
           margin-bottom: 5%;
           height: auto;
           min-height: 1000px;
-          padding: 0 4%;
+          padding: 2% 4%;
         `}
         className="position-relative overflow-hidden green-banner-mobile"
       >

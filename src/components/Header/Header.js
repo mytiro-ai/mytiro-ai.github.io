@@ -350,7 +350,7 @@ const Header = ({ isDark = false }) => {
                 <a className="ml-lg-5 ">Sign in</a>
               </Link>
               <Link href="/">
-                <Button >Join us</Button>
+                <Button className="ml-md-3" >Join us</Button>
               </Link>
             </div>
             <ToggleButton

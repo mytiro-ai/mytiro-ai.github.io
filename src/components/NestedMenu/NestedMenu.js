@@ -160,7 +160,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
           />
         ))}
       </ListGroup>
-      <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
+      <div className="header-btns header-btns-menu ml-auto ml-lg-0">
         <Link href="/">
           <a
             className="ml-lg-5 mr-lg-1"

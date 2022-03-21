@@ -102,7 +102,6 @@ const Offcanvas = ({ show, onHideOffcanvas, children, ...rest }) => {
           <div className="p-3">
             <div className="mb-3 d-flex align-items-center justify-content-between">
               <LogoContainer>
-                <Logo onClick={onHideOffcanvas} />
               </LogoContainer>
               <CloseButton onClick={onHideOffcanvas} />
             </div>
