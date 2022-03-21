@@ -45,7 +45,7 @@ const Hero = () => {
             >
               Get benefits of up to 4 hours in a 40-hour work week
             </Text>
-            <Button className="mt-lg-4" css={`z-index: 1;`}>Get Started</Button>
+            <Button className="mt-lg-4" css={`z-index: 1;`}>Join the waitlist</Button>
           </Box>
         </Container>
         <Container className="mobile-image-container mt-4">

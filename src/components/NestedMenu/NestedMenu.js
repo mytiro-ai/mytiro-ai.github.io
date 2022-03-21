@@ -163,7 +163,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
       <div className="header-btns header-btns-menu ml-auto ml-lg-0">
         <Link href="/">
           <a
-            className="ml-lg-5 mr-lg-1"
+            className="ml-lg-5 mr-lg-1 mt-3"
             css={`
               margin-bottom: 3em;
             `}
@@ -173,7 +173,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
         </Link>
         <br />
         <Link href="/">
-          <Button className="ml-lg-3">Join us</Button>
+          <Button className="ml-lg-3 mt-3">Join us</Button>
         </Link>
       </div>
     </NestedMenuContainer>
