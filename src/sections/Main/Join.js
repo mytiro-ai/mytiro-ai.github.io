@@ -31,7 +31,7 @@ const Join = () => (
               <Text color="black" css={{width: '100%', textAlign: 'right'}}>
                 JOIN OUR
               </Text>
-              <div style={{width: 'max(10.3vw, 100px)', height: "max(10.3vw, 100px)", display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: '0 3%'}}>
+              <div style={{width: 'min(148px,max(10.3vw, 100px))', height: "min(148px,max(10.3vw, 100px))", display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: '0 3%'}}>
                 <img src={logo} alt="" height="100%"/>
               </div>
               <Text color="black" css={{width: '100%', textAlign: 'left', wordBreak:"break-word"}}>
