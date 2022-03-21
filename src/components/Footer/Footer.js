@@ -33,9 +33,8 @@ const CopyRightArea = styled.div`
       dark ? theme.colors.lightShade : theme.colors.darkShade};
     font-size: 13px;
     font-weight: 300;
-    letter-spacing: -0.41px;
-    line-height: 38px;
     margin-bottom: 0;
+    white-space: nowrap;
   }
   ul {
     list-style: none;
