@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import { Title, Section, Text } from "../../components/Core";
-import privacy from "../../assets/SVG/Privacy.svg";
+import privacy from "../../assets/SVG/Privacy_second.svg";
 
 const Privacy = () => {
   const [read, setRead] = useState(false);

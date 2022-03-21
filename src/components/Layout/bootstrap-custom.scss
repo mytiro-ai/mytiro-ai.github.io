@@ -72,6 +72,15 @@ $xl: 1200px; //Extra Large screen start
   left: -300px;
 }
 
+.header-btns a,a:link, a:visited, a:active {
+  color: #7B46B5 !important;
+  font-weight: bold;
+}
+
+.header-btns a:hover {
+  color: #050505 !important;
+}
+
 
 
 @media only screen and (max-width: $md) {
@@ -84,6 +93,7 @@ $xl: 1200px; //Extra Large screen start
 
   .header-btns-menu{
     display: block!important;
+    margin-top: 3em;
   }
 
 }

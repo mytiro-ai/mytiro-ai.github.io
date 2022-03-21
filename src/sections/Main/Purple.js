@@ -37,7 +37,7 @@ const Purple = () => (
       `}
       className="position-relative img-fluid d-flex-column align-items-center justify-content-center"
     >
-      <div className="d-flex flex-column justify-content-center align-items-center">
+      <div className="d-flex flex-column justify-content-center align-items-center text-center">
         <Title color="light">
           At myTiro.ai, we help you understand<br /> what your time really looks like
         </Title>

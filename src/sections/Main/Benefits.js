@@ -25,10 +25,11 @@ const FeatureCard = ({ imgSrc, children, ...rest }) => (
         <Box >
           <Text
             lineHeight={1.75}
-            className="ml-3 featurecard-text"
+            className="ml-4 featurecard-text"
             css={{
-              color: "#05050",
-              fontWeight: "600",
+              color: "#000",
+              fontWeight: "500",
+              fontFamily: 'Roboto,sans-serif',
             }}
           >
             {children}
@@ -48,20 +49,19 @@ const Benefits = () => (
       `}
     >
       <Row className="align-items-center">
-        <Col lg="6" className="order-lg-2" css={{padding: '0 6%!important'}}>
+        <Col lg="7" className="order-lg-2" css={{padding: '0 6%!important'}}>
           <div className="feature-content section-title">
             <Row className="align-items-center">
-              <Col lg="0" className="order-lg-1 mb-3 ml-3">
+              <Col lg="0" className="order-lg-1 mb-4 ml-3">
                 BENEFITS
               </Col>
             </Row>
-            <Title color="black">Merits of myTiro.ai</Title>
+            <Title className="mt-lg-4" color="black">Merits of myTiro.ai</Title>
           </div>
           <Row className="mt-5">
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit1}>
-                Single Source of Truth <br />
-                about your activities
+                Single Source of Truth about your activities
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
@@ -71,7 +71,7 @@ const Benefits = () => (
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit2}>
-                Insights to create time <br/> and increase your focus
+                Insights to create time and increase your focus
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
@@ -80,7 +80,7 @@ const Benefits = () => (
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
-              <FeatureCard imgSrc={benefit3}>Daily productivity tips</FeatureCard>
+              <FeatureCard imgSrc={benefit3}>{"  "}{"Daily productivity tips"}</FeatureCard>
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit6}>Works with existing apps</FeatureCard>
@@ -88,7 +88,7 @@ const Benefits = () => (
           </Row>
         </Col>
 
-        <Col lg="6" className="order-lg-1 mt-5 mt-lg-0">
+        <Col lg="5" className="order-lg-1 mt-5 mt-lg-0">
           <img
             src={benefits}
             alt=""

@@ -145,11 +145,6 @@ const Footer = ({ isDark = true }) => {
                       </li>
                       <li>
                         <a href="/#" target="_blank">
-                          Privacy policy
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/#" target="_blank">
                           Terms & conditons
                         </a>
                       </li>
@@ -182,7 +177,7 @@ const Footer = ({ isDark = true }) => {
                       </Col>
                     </Row>
                     <Col className="text-sm-left mb-sm-0">
-                      <p>&copy; 2022 myTiro.ai, All Rights Reserved</p>
+                      <p style={{whitespace: 'nowrap !important'}}>&copy; 2022 myTiro.ai, All Rights Reserved</p>
                     </Col>
                   </CopyRightArea>
                 </Col>

@@ -4,7 +4,7 @@ import { device } from "../../utils";
 import { Row, Col } from "react-bootstrap";
 import shoaib from "../../assets/SVG/Shoaib Ahmed.svg";
 import rajeev from "../../assets/SVG/Rajeev Ved.svg";
-import jeniffer from '../../assets/SVG/Jeniffer Prendki.svg';
+import jeniffer from "../../assets/SVG/Jeniffer Prendki.svg";
 import { Title, Section, Box, Text } from "../../components/Core";
 import pattern4 from "../../assets/SVG/Pattern_4@2x.svg";
 
@@ -19,11 +19,17 @@ const ShapeBottomLeft = styled(Box)`
 `;
 
 const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
-  <Box bg="transparent" borderRadius={10} mb={4} {...rest} css={{overflow: 'visible'}}>
+  <Box
+    bg="transparent"
+    borderRadius={10}
+    mb={4}
+    {...rest}
+    css={{ overflow: "visible" }}
+  >
     <Box
       fontSize="28px"
       className="d-flex justify-content-center align-items-center"
-      css={{backgroundColor: 'transparent'}}
+      css={{ backgroundColor: "transparent" }}
     >
       <img src={imgSrc} />
     </Box>
@@ -51,8 +57,8 @@ const Leadership = () => {
 
   const JenifferContent = [
     `Dr. Prendki, PhD from Sorbonne, is advising on how to scale high-performance ML and data-driven approach at myTiro`,
-    `She is the founder and CEO of Alectio. Previously, she was the VP of Machine Learning at Figure Eight, the Chief Data Scientist at Atlassian and a Senior Manager of Data Science in the Search Team at Walmart.`
-  ]
+    `She is the founder and CEO of Alectio. Previously, she was the VP of Machine Learning at Figure Eight, the Chief Data Scientist at Atlassian and a Senior Manager of Data Science in the Search Team at Walmart.`,
+  ];
 
   const readMoreShoaibData = () => {
     setReadShoaib(!readShoaib);
@@ -83,9 +89,7 @@ const Leadership = () => {
         />
         <Row className="align-items-flex-start">
           <Col lg="4" className="order-lg-1">
-            <div
-              className="feature-content section-title"
-            >
+            <div className="feature-content section-title">
               <Row className="leadership-title">
                 <Col lg="0" className="order-lg-1 mb-3">
                   TEAM
@@ -111,7 +115,6 @@ const Leadership = () => {
                     css={`
                       color: black;
                       font-weight: 650;
-                      letter-spacing: -2.5px;
                       font-size: 3rem;
                       line-height: 54px;
 
@@ -130,19 +133,26 @@ const Leadership = () => {
                   </Text>
                   <Text>
                     Co-founder and CTO{" "}
-                    <a href="/#" target="_blank">
+                    <a href="https://www.linkedin.com/in/shoaib30/" target="_blank">
                       <i className="ml-2 icon icon-logo-linkedin"></i>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
-                    {ShoaibContent[0]} {readShoaib ? ShoaibContent[1] : ""}
+                    {ShoaibContent[0]} <br />
+                    {readShoaib ? ShoaibContent[1] : ""}
                   </Text>
                   {readShoaib ? (
-                    <button onClick={readMoreShoaibData} className="readmore-button">
+                    <button
+                      onClick={readMoreShoaibData}
+                      className="readmore-button"
+                    >
                       Read Less <i className="icon icon-small-up" />
                     </button>
                   ) : (
-                    <button onClick={readMoreShoaibData} className="readmore-button">
+                    <button
+                      onClick={readMoreShoaibData}
+                      className="readmore-button"
+                    >
                       Read More <i className="icon icon-small-down" />
                     </button>
                   )}
@@ -155,7 +165,6 @@ const Leadership = () => {
                     color="heading"
                     css={`
                       font-weight: 650;
-                      letter-spacing: -2.5px;
                       font-size: 3rem;
                       line-height: 54px;
 
@@ -174,19 +183,27 @@ const Leadership = () => {
                   </Text>
                   <Text>
                     Co-founder and CEO
-                    <a href="/#" target="_blank">
+                    <a href="https://www.linkedin.com/in/rajeev-ved/" target="_blank">
                       <i className="ml-2 icon icon-logo-linkedin"></i>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
-                    {RajeevContent[0]} {readRajeev ? RajeevContent[1] : ''}
+                    {RajeevContent[0]} <br />
+                    {readRajeev ? RajeevContent[1] : ""}
                   </Text>
                   {readRajeev ? (
-                    <button onClick={readMoreRajeevData} className="readmore-button" css={{zIndex: 2}}>
+                    <button
+                      onClick={readMoreRajeevData}
+                      className="readmore-button"
+                      css={{ zIndex: 2 }}
+                    >
                       Read Less <i className="icon icon-small-up" />
                     </button>
                   ) : (
-                    <button onClick={readMoreRajeevData} className="readmore-button">
+                    <button
+                      onClick={readMoreRajeevData}
+                      className="readmore-button"
+                    >
                       Read More <i className="icon icon-small-down" />
                     </button>
                   )}
@@ -196,7 +213,7 @@ const Leadership = () => {
           </Col>
         </Row>
       </Section>
-      
+
       <Section
         id="team"
         className="position-relative"
@@ -214,9 +231,9 @@ const Leadership = () => {
           style={{ position: "absolute", top: 100, right: -300 }}
         />
         <Row id="our-advisors-container">
-        <Col lg="9" className="pl-lg-5 order-lg-1">
+          <Col lg="7" className="pl-lg-5 order-lg-1">
             <Row>
-              <Col md="1"></Col>
+              <Col md="4"></Col>
               <Col md="4">
                 <FeatureCard imgSrc={jeniffer}>
                   <Text
@@ -224,7 +241,6 @@ const Leadership = () => {
                     css={`
                       color: black;
                       font-weight: 650;
-                      letter-spacing: -2.5px;
                       font-size: 3rem;
                       line-height: 54px;
 
@@ -239,36 +255,44 @@ const Leadership = () => {
                       }
                     `}
                   >
-                    Jennifer
+                    Dr. Jennifer Prendki
                   </Text>
                   <Text>
                     Advisor{" "}
-                    <a href="/#" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/jennifer-prendki
+"
+                      target="_blank"
+                    >
                       <i className="ml-2 icon icon-logo-linkedin"></i>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
-                    {JenifferContent[0]} {readJeniffer? JenifferContent[1]: ""}
+                    {JenifferContent[0]} <br />
+                    {readJeniffer ? JenifferContent[1] : ""}
                   </Text>
                   {readJeniffer ? (
-                    <button onClick={readMoreJenifferData} className="readmore-button">
+                    <button
+                      onClick={readMoreJenifferData}
+                      className="readmore-button"
+                    >
                       Read Less <i className="icon icon-small-up" />
                     </button>
                   ) : (
-                    <button onClick={readMoreJenifferData} className="readmore-button">
+                    <button
+                      onClick={readMoreJenifferData}
+                      className="readmore-button"
+                    >
                       Read More <i className="icon icon-small-down" />
                     </button>
                   )}
                 </FeatureCard>
               </Col>
-              <Col md="3">
-              </Col>
+              <Col md="3"></Col>
             </Row>
           </Col>
           <Col lg="2" className="order-lg-2">
-            <div
-              className="feature-content section-title text-left"
-            >
+            <div className="feature-content section-title text-left">
               <Row className="leadership-title">
                 <Col lg="0" className="order-lg-1 mb-3">
                   OUR

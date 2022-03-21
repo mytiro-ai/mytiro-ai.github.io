@@ -163,7 +163,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
       <div className="header-btns header-btns-menu ml-auto ml-lg-0">
         <Link href="/">
           <a
-            className="ml-lg-5 mr-lg-1 mt-3"
+            className="ml-lg-5 mr-lg-1"
             css={`
               margin-bottom: 3em;
             `}
