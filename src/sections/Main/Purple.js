@@ -27,6 +27,7 @@ const Purple = () => (
         padding: 2% 6%;
         border-radius: 32px;
         margin: 0 4%;
+        height: auto!important;
         overflow: hidden;
         @media ${device.md} {
           padding: 11% 6%;
