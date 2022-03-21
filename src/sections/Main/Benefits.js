@@ -26,8 +26,8 @@ const FeatureCard = ({ imgSrc, children, ...rest }) => (
             lineHeight={1.75}
             className="ml-3 featurecard-text"
             css={{
-              color: "#000",
-              fontWeight: "500",
+              color: "#05050",
+              fontWeight: "600",
             }}
           >
             {children}

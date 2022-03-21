@@ -115,7 +115,7 @@ const Leadership = () => {
                       font-size: 3rem;
                       line-height: 54px;
 
-                      @media ${device.sm} {
+                      @media ${device.xs} {
                         font-size: 1.5rem;
                         line-height: 62px;
                       }
@@ -159,7 +159,7 @@ const Leadership = () => {
                       font-size: 3rem;
                       line-height: 54px;
 
-                      @media ${device.sm} {
+                      @media ${device.xs} {
                         font-size: 1.5rem;
                         line-height: 62px;
                       }
@@ -228,7 +228,7 @@ const Leadership = () => {
                       font-size: 3rem;
                       line-height: 54px;
 
-                      @media ${device.sm} {
+                      @media ${device.xs} {
                         font-size: 1.5rem;
                         line-height: 62px;
                       }
