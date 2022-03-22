@@ -42,8 +42,8 @@ const Join = () => (
               <Title className="mb-0">
                 Looking for a technical challenge<br/> and meaningful work?
               </Title>
-              <Link to="https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing">
-                <Button bg="black" className="mt-5">
+              <Link>
+                <Button bg="black" className="mt-5" onClick={()=> window.open("https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing")}>
                   Join Us
                 </Button>
               </Link>

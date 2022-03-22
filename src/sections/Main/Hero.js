@@ -45,12 +45,13 @@ const Hero = () => {
             >
               Get benefits of up to 4 hours in a 40-hour work week
             </Text>
-            <Link to="https://forms.gle/yhfK15wAEx71m6AGA">
+            <Link>
               <Button
                 className="mt-lg-4"
                 css={`
                   z-index: 1;
                 `}
+                onClick = {()=> window.open("https://forms.gle/yhfK15wAEx71m6AGA")}
               >
                 Join the waitlist
               </Button>
