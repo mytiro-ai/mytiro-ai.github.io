@@ -133,24 +133,45 @@ const Footer = ({ isDark = true }) => {
                   <div className="mb-5 mb-lg-4">
                     <UlStyled color={isDark ? "lightShade" : "darkShade"}>
                       <li>
-                        <a href="/#" target="_blank">
+                        <ScrollLink
+                          activeClass="active"
+                          to={"team"}
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                        >
                           Help
-                        </a>
+                        </ScrollLink>
                       </li>
                       <li>
-                        <a href="/#" target="_blank">
-                          Contact us
-                        </a>
+                        <ScrollLink
+                          activeClass="active"
+                          to={"team"}
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                        >
+                          Contact Us
+                        </ScrollLink>
                       </li>
                       <li>
-                        <a href="/#" target="_blank">
-                          Terms & conditons
-                        </a>
+                        <ScrollLink
+                          activeClass="active"
+                          to={"team"}
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                        >
+                          Terms & Conditions
+                        </ScrollLink>
                       </li>
                     </UlStyled>
                   </div>
                 </Col>
-                <Col xs="6" lg="3"></Col>
+                <Col md="0" lg="3"></Col>
                 <Col xs="6" lg="3">
                   <CopyRightArea dark={isDark ? 1 : 0}>
                     <Row className="align-items-left ml-1">
@@ -158,25 +179,27 @@ const Footer = ({ isDark = true }) => {
                         <ul className="social-icons">
                           <li>
                             <a href="/#" target="_blank">
-                              <img src={fb_logo}/>
+                              <img src={fb_logo} />
                             </a>
                           </li>
 
                           <li>
                             <a href="/#" target="_blank">
-                            <img src={ig_logo}/>
+                              <img src={ig_logo} />
                             </a>
                           </li>
                           <li>
                             <a href="/#" target="_blank">
-                            <img src={linkedin_logo}/>
+                              <img src={linkedin_logo} />
                             </a>
                           </li>
                         </ul>
                       </Col>
                     </Row>
                     <Col className="text-sm-left mb-sm-0">
-                      <p style={{whitespace: 'nowrap !important'}}>&copy; 2022 myTiro.ai, All Rights Reserved</p>
+                      <p style={{ whitespace: "nowrap !important" }}>
+                        &copy; 2022 myTiro.ai, All Rights Reserved
+                      </p>
                     </Col>
                   </CopyRightArea>
                 </Col>

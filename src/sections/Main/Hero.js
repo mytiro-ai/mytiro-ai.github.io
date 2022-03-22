@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
-
+import { Link } from "gatsby";
 import topCurve from "../../assets/SVG/Line@2x.svg";
 import Guy from "../../assets/SVG/Banner.svg";
-import Banner_mobile from '../../assets/SVG/Banner_mobile.svg';
+import Banner_mobile from "../../assets/SVG/Banner_mobile.svg";
 
 const Hero = () => {
   return (
@@ -39,17 +39,26 @@ const Hero = () => {
               color="text"
               css={`
                 margin-top: 1%;
-                color: #050505
+                color: #050505;
               `}
               mb="2.5rem"
             >
               Get benefits of up to 4 hours in a 40-hour work week
             </Text>
-            <Button className="mt-lg-4" css={`z-index: 1;`}>Join the waitlist</Button>
+            <Link to="https://forms.gle/yhfK15wAEx71m6AGA">
+              <Button
+                className="mt-lg-4"
+                css={`
+                  z-index: 1;
+                `}
+              >
+                Join the waitlist
+              </Button>
+            </Link>
           </Box>
         </Container>
         <Container className="mobile-image-container mt-4">
-            <img src={Banner_mobile} width='90%' />
+          <img src={Banner_mobile} width="90%" />
         </Container>
 
         <img

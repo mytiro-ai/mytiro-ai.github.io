@@ -172,7 +172,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
           </a>
         </Link>
         <br />
-        <Link href="/">
+        <Link href="https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing">
           <Button className="ml-lg-3 mt-3">Join us</Button>
         </Link>
       </div>
