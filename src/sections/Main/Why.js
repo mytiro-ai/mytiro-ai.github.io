@@ -64,7 +64,10 @@ const Why = () => {
   // };
   return (
     <>
-      <ShapeBottomLeft id="green-pattern-image" css={{position: 'absolute', bottom: '-90vh', left: '-300px'}}>
+      <ShapeBottomLeft
+        id="green-pattern-image"
+        css={{ position: "absolute", bottom: "-90vh", left: "-300px" }}
+      >
         <img src={greenPattern} alt="" className="img-fluid" />
       </ShapeBottomLeft>
       <Section
@@ -126,20 +129,20 @@ const Why = () => {
                   We understand{" "}
                   <span style={{ whiteSpace: "nowrap" }}>you -</span>
                   <br />
-                  your{" "}
+                  you -{" "}
                   <span
                     css={`
                       color: #643992;
                     `}
                   >
-                    context, patterns, and habits.
+                    your context, patterns, and habits.
                   </span>
                 </Text>{" "}
                 <div>
                   <Text>
-                    You have many decisions to make each day - emails, phone
-                    calls, meetings, and lists. Spot the spaces for the focused,
-                    productive work you wish to accomplish.{" "}
+                    You have many demands on your time each day - emails, phone
+                    calls, meetings, goals, and lists. We help you find the time
+                    for the focused, productive work you wish to accomplish 
                   </Text>
                   {/* <Text>{read ? Content[1] : ""}</Text>
                   {read ? (

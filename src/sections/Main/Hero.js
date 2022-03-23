@@ -33,7 +33,7 @@ const Hero = () => {
         <Container>
           <Box className="d-flex flex-column align-items-center text-center mt-4">
             <Title variant="hero" color="primary">
-              Be Mindfully Productive
+            Track. Learn. Change
             </Title>
             <Text
               color="text"
@@ -43,7 +43,7 @@ const Hero = () => {
               `}
               mb="2.5rem"
             >
-              Get benefits of up to 4 hours in a 40-hour work week
+              MyTiro is the most comprehensive personal time, activity and focus tracker.
             </Text>
             <Link>
               <Button

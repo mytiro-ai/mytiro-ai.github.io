@@ -56,31 +56,31 @@ const Benefits = () => (
                 BENEFITS
               </Col>
             </Row>
-            <Title className="mt-lg-4" color="black">Merits of myTiro</Title>
+            <Title className="mt-lg-4" color="black">Track all your activities -<br/>  A Single Source of Truth</Title>
           </div>
           <Row className="mt-5">
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit1}>
-                Single Source of Truth about your activities
+              Track all your activities -<br/>  A Single Source of Truth
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit4}>
-                Identifies your goals
+              Learn about your habits -<br/> Insights to create time and increase your focus
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit2}>
-                Insights to create time and increase your focus
+              Change your actions - Daily productivity tips
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit5}>
-                Tracks your benefits
+              Identifies your goals 
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
-              <FeatureCard imgSrc={benefit3}>{"  "}{"Daily productivity tips"}</FeatureCard>
+              <FeatureCard imgSrc={benefit3}>Tracks your benefits</FeatureCard>
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit6}>Works with existing apps</FeatureCard>

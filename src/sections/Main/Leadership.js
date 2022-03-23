@@ -51,8 +51,8 @@ const Leadership = () => {
     `He has been part of the founding team of multiple projects harnessing large datasets and ML. He is an experienced technology executive. He was recently with GE working optimizing their power business through large dataset analytics`,
   ];
   const RajeevContent = [
-    `Rajeev started myTiro because he could not find a simple tool/technique that told where, when and how he was spending his time and how he can improve his productivity daily.`,
-    `Rajeev has been part of founding teams for two tech startups and one hedge fund.  He has 20+ years of experience across US & India, including 8 years as CEO. `,
+    `Rajeev started myTiro because he could not find a simple tool/technique that told him where, when and how he was spending his time and how he can improve his productivity daily.`,
+    `Rajeev has been part of founding teams for two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
   ];
 
   const JenifferContent = [
