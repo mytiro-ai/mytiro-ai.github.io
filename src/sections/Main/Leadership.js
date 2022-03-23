@@ -24,17 +24,17 @@ const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
     borderRadius={10}
     mb={4}
     {...rest}
-    css={{ overflow: "visible" }}
+    css={{  }}
   >
     <Box
       fontSize="28px"
       className="d-flex justify-content-center align-items-center"
-      css={{ backgroundColor: "transparent" }}
+      css={{ backgroundColor: "transparent", marginBottom: '24px' }}
     >
-      <img src={imgSrc} />
+      <img src={imgSrc} width="90%"/>
     </Box>
     <div>
-      <Text fontSize={2} lineHeight={1.75}>
+      <Text fontSize={2}>
         {children}
       </Text>
     </div>
@@ -88,7 +88,7 @@ const Leadership = () => {
           //style={{ position: "absolute", top: 100, left: -300 }}
         />
         <Row className="align-items-flex-start">
-          <Col lg="4" className="order-lg-1">
+          <Col lg="3" className="order-lg-1">
             <div className="feature-content section-title">
               <Row className="leadership-title">
                 <Col lg="0" className="order-lg-1 mb-3">
@@ -105,33 +105,29 @@ const Leadership = () => {
               <img src={pattern4} alt="" className="img-fluid" />
             </ShapeBottomLeft> */}
           </Col>
-          <Col lg="8" className="pl-lg-5 order-lg-2">
+          <Col lg="9" className="pl-lg-5 order-lg-2">
             <Row>
-              <Col md="1"></Col>
-              <Col md="4">
+              <Col md="6" lg="4">
                 <FeatureCard imgSrc={shoaib}>
                   <Text
                     className="mb-0"
                     css={`
                       color: black;
                       font-weight: 650;
-                      font-size: 3rem;
-                      line-height: 54px;
+                      font-size: 2.5rem;
 
                       @media ${device.xs} {
                         font-size: 1.5rem;
-                        line-height: 62px;
                       }
 
                       @media ${device.lg} {
                         font-size: 2.1rem;
-                        line-height: 70px;
                       }
                     `}
                   >
                     Shoaib Ahmed
                   </Text>
-                  <Text>
+                  <Text css={{whiteSpace: 'nowrap'}}>
                     Co-founder and CTO{" "}
                     <a href="https://www.linkedin.com/in/shoaib30/" target="_blank">
                       <i className="ml-2 icon icon-logo-linkedin"></i>
@@ -158,30 +154,27 @@ const Leadership = () => {
                   )}
                 </FeatureCard>
               </Col>
-              <Col md="2"></Col>
-              <Col md="4">
+              
+              <Col md="6" lg="4">
                 <FeatureCard imgSrc={rajeev}>
                   <Text
                     color="heading"
                     css={`
                       font-weight: 650;
-                      font-size: 3rem;
-                      line-height: 54px;
+                      font-size: 2.5rem;
 
                       @media ${device.xs} {
                         font-size: 1.5rem;
-                        line-height: 62px;
                       }
 
                       @media ${device.lg} {
                         font-size: 2.1rem;
-                        line-height: 70px;
                       }
                     `}
                   >
                     Rajeev Ved
                   </Text>
-                  <Text>
+                  <Text css={{whiteSpace: 'nowrap'}}>
                     Co-founder and CEO
                     <a href="https://www.linkedin.com/in/rajeev-ved/" target="_blank">
                       <i className="ml-2 icon icon-logo-linkedin"></i>
@@ -209,12 +202,64 @@ const Leadership = () => {
                   )}
                 </FeatureCard>
               </Col>
+
+              <Col md="6" lg="4">
+              <FeatureCard imgSrc={jeniffer}>
+                  <Text
+                    className="mb-0"
+                    css={`
+                      color: black;
+                      font-weight: 650;
+                      font-size: 2.5rem;
+
+                      @media ${device.xs} {
+                        font-size: 1.5rem;
+                      }
+
+                      @media ${device.lg} {
+                        font-size: 2.1rem;
+                      }
+                    `}
+                  >
+                    Dr. Jennifer Prendki
+                  </Text>
+                  <Text css={{whiteSpace: 'nowrap'}}>
+                    Advisor{" "}
+                    <a
+                      href="https://www.linkedin.com/in/jennifer-prendki
+"
+                      target="_blank"
+                    >
+                      <i className="ml-2 icon icon-logo-linkedin"></i>
+                    </a>
+                  </Text>
+                  <Text variant="small" className="mt-1">
+                    {JenifferContent[0]} <br />
+                    {readJeniffer ? JenifferContent[1] : ""}
+                  </Text>
+                  {readJeniffer ? (
+                    <button
+                      onClick={readMoreJenifferData}
+                      className="readmore-button"
+                    >
+                      Read Less <i className="icon icon-small-up" />
+                    </button>
+                  ) : (
+                    <button
+                      onClick={readMoreJenifferData}
+                      className="readmore-button"
+                    >
+                      Read More <i className="icon icon-small-down" />
+                    </button>
+                  )}
+                </FeatureCard>
+              </Col>
             </Row>
           </Col>
         </Row>
       </Section>
 
-      <Section
+      {/* <Section
         id="team"
         className="position-relative"
         css={`
@@ -304,12 +349,9 @@ const Leadership = () => {
                 </Title>
               </div>
             </div>
-            {/* <ShapeBottomLeft>
-              <img src={pattern4} alt="" className="img-fluid" />
-            </ShapeBottomLeft> */}
           </Col>
         </Row>
-      </Section>
+      </Section> */}
     </>
   );
 };
