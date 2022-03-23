@@ -56,7 +56,7 @@ const Benefits = () => (
                 BENEFITS
               </Col>
             </Row>
-            <Title className="mt-lg-4" color="black">Merits of myTiro.ai</Title>
+            <Title className="mt-lg-4" color="black">Merits of myTiro</Title>
           </div>
           <Row className="mt-5">
             <Col md="6" sm="12">

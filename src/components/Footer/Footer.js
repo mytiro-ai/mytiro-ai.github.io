@@ -198,7 +198,7 @@ const Footer = ({ isDark = true }) => {
                     </Row>
                     <Col className="text-sm-left mb-sm-0">
                       <p style={{ whitespace: "nowrap !important" }}>
-                        &copy; 2022 myTiro.ai, All Rights Reserved
+                        &copy; 2022 myTiro, All Rights Reserved
                       </p>
                     </Col>
                   </CopyRightArea>
