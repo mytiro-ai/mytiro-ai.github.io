@@ -56,7 +56,7 @@ const Benefits = () => (
                 BENEFITS
               </Col>
             </Row>
-            <Title className="mt-lg-4" color="black">Track all your activities -<br/>  A Single Source of Truth</Title>
+            <Title className="mt-lg-4" color="black">Merits of myTiro</Title>
           </div>
           <Row className="mt-5">
             <Col md="6" sm="12">

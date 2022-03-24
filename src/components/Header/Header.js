@@ -11,6 +11,7 @@ import NestedMenu from "../NestedMenu";
 import { device } from "../../utils";
 import Logo from "../Logo";
 import { menuItems } from "./menuItems";
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 const SiteHeader = styled.header`
   padding: 10px 0 10px 0;
@@ -277,6 +278,21 @@ const Header = ({ isDark = false }) => {
     }
   });
 
+  const handleClick = (e) => {
+    // To stop the page reloading
+    e.preventDefault();
+    // Lets track that custom click
+    trackCustomEvent({
+      // string - required - The object that was interacted with (e.g.video)
+      category: "Join The team Button - header",
+      // string - required - Type of interaction (e.g. 'play')
+      action: "Click",
+      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+      label: "Recruitment for myTiro",
+    });
+    window.open("https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing");
+  };
+
   return (
     <>
       <SiteHeader
@@ -350,7 +366,7 @@ const Header = ({ isDark = false }) => {
                 <a className="ml-lg-5 ">Sign in</a>
               </Link>
               <Link>
-                <Button className="ml-md-3"  onClick={()=> window.open("https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing")}>Join us</Button>
+                <Button className="ml-md-3"  onClick={handleClick}>Join us</Button>
               </Link>
             </div>
             <ToggleButton

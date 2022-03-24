@@ -29,6 +29,7 @@ const Privacy = () => {
         className="position-relative overflow-hidden"
         id="privacy"
         css={`
+          padding-top: 10px !important;
         `}
       >
         <Row className="align-items-center">
@@ -78,13 +79,13 @@ const Privacy = () => {
             </div>
           </Col>
 
-          <Col lg="6" className="order-lg-2 mt-5 mt-lg-0">
+          <Col lg="6" className="order-lg-2 mt-1 mt-lg-0">
             <img
               src={privacy}
               alt=""
               className="img-fluid"
               css={`
-                width: 100vw;
+                width: 100%;
               `}
             />
           </Col>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "gatsby";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import logo from "../../assets/SVG/Logo Symbol.svg";
 import pattern from "../../assets/Png/Pattern_5.png";
@@ -14,7 +15,23 @@ const ShapeBottom = styled(Box)`
   width: 21.8vw;
 `;
 
-const Join = () => (
+const Join = () => {
+  const handleClick = (e) => {
+    // To stop the page reloading
+    e.preventDefault();
+    // Lets track that custom click
+    trackCustomEvent({
+      // string - required - The object that was interacted with (e.g.video)
+      category: "Join The team Button",
+      // string - required - Type of interaction (e.g. 'play')
+      action: "Click",
+      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+      label: "Recruitment for myTiro",
+    });
+    window.open("https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing");
+  };
+
+  return(
   <>
     <Section bg="warning" className="position-relative">
       <ShapeBottom id="join-pattern">
@@ -43,7 +60,7 @@ const Join = () => (
                 Looking for a technical challenge<br/> and meaningful work?
               </Title>
               <Link>
-                <Button bg="black" className="mt-5" onClick={()=> window.open("https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing")}>
+                <Button bg="black" className="mt-5" onClick={handleClick}>
                   Join Us
                 </Button>
               </Link>
@@ -52,7 +69,7 @@ const Join = () => (
         </Row>
       </Container>
     </Section>
-  </>
-);
+  </>)
+  };
 
 export default Join;

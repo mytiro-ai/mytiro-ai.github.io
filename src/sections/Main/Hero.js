@@ -5,8 +5,24 @@ import { Link } from "gatsby";
 import topCurve from "../../assets/SVG/Line@2x.svg";
 import Guy from "../../assets/SVG/Banner.svg";
 import Banner_mobile from "../../assets/SVG/Banner_mobile.svg";
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 const Hero = () => {
+  const handleClick = (e) => {
+    // To stop the page reloading
+    e.preventDefault();
+    // Lets track that custom click
+    trackCustomEvent({
+      // string - required - The object that was interacted with (e.g.video)
+      category: "Join Waitlist button",
+      // string - required - Type of interaction (e.g. 'play')
+      action: "Click",
+      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+      label: "Waitlist form for myTiro",
+    });
+    window.open("https://forms.gle/yhfK15wAEx71m6AGA");
+  };
+
   return (
     <>
       <Row>
@@ -33,7 +49,7 @@ const Hero = () => {
         <Container>
           <Box className="d-flex flex-column align-items-center text-center mt-4">
             <Title variant="hero" color="primary">
-            Track. Learn. Change
+              Track. Learn. Change
             </Title>
             <Text
               color="text"
@@ -43,7 +59,8 @@ const Hero = () => {
               `}
               mb="2.5rem"
             >
-              MyTiro is the most comprehensive personal time, activity and focus tracker.
+              MyTiro is the most comprehensive personal time, activity and focus
+              tracker.
             </Text>
             <Link>
               <Button
@@ -51,7 +68,7 @@ const Hero = () => {
                 css={`
                   z-index: 1;
                 `}
-                onClick = {()=> window.open("https://forms.gle/yhfK15wAEx71m6AGA")}
+                onClick={handleClick}
               >
                 Join the waitlist
               </Button>
