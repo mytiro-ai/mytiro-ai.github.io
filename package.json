@@ -51,7 +51,7 @@
     "start": "yarn develop",
     "build": "gatsby clean && gatsby build",
     "clean": "gatsby clean",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -p 9000",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"

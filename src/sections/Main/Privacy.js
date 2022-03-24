@@ -11,7 +11,7 @@ const Privacy = () => {
   const cssClasses = ["read", read ? "readMore graduallyGoDown" : "readLess"];
 
   let Content = [
-    `Your data is fully encrypted.  No human can access your data. We make sure that your information is used to help you be mindfully productive.  
+    `Your data is fully encrypted.  No human can access your data. We make sure that your information is only used to help you be mindfully productive.  
 
     Make your data work for you.`,
     `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -33,7 +33,11 @@ const Privacy = () => {
         `}
       >
         <Row className="align-items-center">
-          <Col lg="6" className="order-lg-1" css={{padding: '0 6% !important'}}>
+          <Col
+            lg="6"
+            className="order-lg-1"
+            css={{ padding: "0 6% !important" }}
+          >
             <div className="feature-content section-title">
               <Row className="align-items-center">
                 <Col lg="0" className="order-lg-1 mb-3 ml-3">
@@ -41,7 +45,7 @@ const Privacy = () => {
                 </Col>
               </Row>
               <div className="feature-content section-title">
-                <Title color="black" className="mb-0" css={{margin: '5% 0'}}>
+                <Title color="black" className="mb-0" css={{ margin: "5% 0" }}>
                   End-to-end security
                 </Title>
                 <div className="mt-5">
@@ -52,9 +56,13 @@ const Privacy = () => {
                       line-height: 30px;
                     `}
                   >
-                    Your data is fully encrypted.  No human can access your data. We make sure that your information is used to help you be mindfully productive.
-                    <br/><br/>
-                    Make your data work for you. <br /><br/>
+                    Your data is fully encrypted. No human can access your data.
+                    We make sure that your information is used to help you be
+                    mindfully productive.
+                    <br />
+                    <br />
+                    Make your data work for you. <br />
+                    <br />
                   </Text>
                   {/* <Text
                     css={`

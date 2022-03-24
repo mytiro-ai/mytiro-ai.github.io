@@ -27,7 +27,7 @@ const Purple = () => (
         padding: 6% 10%;
         border-radius: 0;
         margin: 0;
-        height: auto!important;
+        height: auto !important;
         overflow: hidden;
         @media ${device.md} {
           padding: 11% 6%;
@@ -39,7 +39,8 @@ const Purple = () => (
     >
       <div className="d-flex flex-column justify-content-center align-items-center text-center">
         <Title color="light">
-          At myTiro, we help you understand<br /> what your time really looks like
+          At myTiro, we help you understand
+          <br /> what your time really looks like.
         </Title>
       </div>
     </Section>

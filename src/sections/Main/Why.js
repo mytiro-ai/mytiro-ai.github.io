@@ -127,9 +127,7 @@ const Why = () => {
                   `}
                 >
                   We understand{" "}
-                  <span style={{ whiteSpace: "nowrap" }}>you -</span>
-                  <br />
-                  you -{" "}
+                  <span style={{ whiteSpace: "nowrap" }}>you - </span>
                   <span
                     css={`
                       color: #643992;
@@ -141,8 +139,8 @@ const Why = () => {
                 <div>
                   <Text>
                     You have many demands on your time each day - emails, phone
-                    calls, meetings, goals, and lists. We help you find the time
-                    for the focused, productive work you wish to accomplish 
+                    calls, meetings, goals, and lists. We help you find time for
+                    the focused, productive work you wish to accomplish.
                   </Text>
                   {/* <Text>{read ? Content[1] : ""}</Text>
                   {read ? (

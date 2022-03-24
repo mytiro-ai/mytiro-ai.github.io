@@ -49,7 +49,7 @@ const Hero = () => {
         <Container>
           <Box className="d-flex flex-column align-items-center text-center mt-4">
             <Title variant="hero" color="primary">
-              Track. Learn. Change
+              Track. Learn. Change.
             </Title>
             <Text
               color="text"

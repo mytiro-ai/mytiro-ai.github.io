@@ -19,24 +19,16 @@ const ShapeBottomLeft = styled(Box)`
 `;
 
 const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
-  <Box
-    bg="transparent"
-    borderRadius={10}
-    mb={4}
-    {...rest}
-    css={{  }}
-  >
+  <Box bg="transparent" borderRadius={10} mb={4} {...rest} css={{}}>
     <Box
       fontSize="28px"
       className="d-flex justify-content-center align-items-center"
-      css={{ backgroundColor: "transparent", marginBottom: '24px' }}
+      css={{ backgroundColor: "transparent", marginBottom: "24px" }}
     >
-      <img src={imgSrc} width="90%"/>
+      <img src={imgSrc} width="90%" />
     </Box>
     <div>
-      <Text fontSize={2}>
-        {children}
-      </Text>
+      <Text fontSize={2}>{children}</Text>
     </div>
   </Box>
 );
@@ -47,17 +39,17 @@ const Leadership = () => {
   const [readJeniffer, setReadJeniffer] = useState(false);
 
   const ShoaibContent = [
-    `Shoaib’s long term and persistent effort to automate mundane tasks through deep tech led him to myTiro.`,
-    `He has been part of the founding team of multiple projects harnessing large datasets and ML. He is an experienced technology executive. He was recently with GE working optimizing their power business through large dataset analytics`,
+    `Shoaib is an experienced technology executive whose long term and persistent effort to automate mundane tasks through deep tech led him to myTiro.`,
+    `He has been part of the founding team of multiple projects harnessing large datasets and ML. He was recently with GE, working to optimize their power business through large dataset analytics`,
   ];
   const RajeevContent = [
-    `Rajeev started myTiro because he could not find a simple tool/technique that told him where, when and how he was spending his time and how he can improve his productivity daily.`,
-    `Rajeev has been part of founding teams for two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
+    `Rajeev started myTiro because he could not find a simple tool or technique that told him where, when, and how he was spending his time and how he could improve his productivity daily.`,
+    `He has been part of the founding team of two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
   ];
 
   const JenifferContent = [
-    `Dr. Prendki, PhD from Sorbonne, is advising on how to scale high-performance ML and data-driven approach at myTiro`,
-    `She is the founder and CEO of Alectio. Previously, she was the VP of Machine Learning at Figure Eight, the Chief Data Scientist at Atlassian and a Senior Manager of Data Science in the Search Team at Walmart.`,
+    `Dr. Prendki, PhD from Sorbonne, is advising myTiro on how to scale high-performance ML and build a data-driven approach.`,
+    `She is the founder and CEO of Alectio. Previously, she was the VP of Machine Learning at Figure Eight, the Chief Data Scientist at Atlassian, and a Senior Manager of Data Science in the Search Team at Walmart.`,
   ];
 
   const readMoreShoaibData = () => {
@@ -127,9 +119,12 @@ const Leadership = () => {
                   >
                     Shoaib Ahmed
                   </Text>
-                  <Text css={{whiteSpace: 'nowrap'}}>
+                  <Text css={{ whiteSpace: "nowrap" }}>
                     Co-founder and CTO{" "}
-                    <a href="https://www.linkedin.com/in/shoaib30/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/shoaib30/"
+                      target="_blank"
+                    >
                       <i className="ml-2 icon icon-logo-linkedin"></i>
                     </a>
                   </Text>
@@ -154,7 +149,7 @@ const Leadership = () => {
                   )}
                 </FeatureCard>
               </Col>
-              
+
               <Col md="6" lg="4">
                 <FeatureCard imgSrc={rajeev}>
                   <Text
@@ -174,9 +169,12 @@ const Leadership = () => {
                   >
                     Rajeev Ved
                   </Text>
-                  <Text css={{whiteSpace: 'nowrap'}}>
+                  <Text css={{ whiteSpace: "nowrap" }}>
                     Co-founder and CEO
-                    <a href="https://www.linkedin.com/in/rajeev-ved/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/rajeev-ved/"
+                      target="_blank"
+                    >
                       <i className="ml-2 icon icon-logo-linkedin"></i>
                     </a>
                   </Text>
@@ -204,7 +202,7 @@ const Leadership = () => {
               </Col>
 
               <Col md="6" lg="4">
-              <FeatureCard imgSrc={jeniffer}>
+                <FeatureCard imgSrc={jeniffer}>
                   <Text
                     className="mb-0"
                     css={`
@@ -223,7 +221,7 @@ const Leadership = () => {
                   >
                     Dr. Jennifer Prendki
                   </Text>
-                  <Text css={{whiteSpace: 'nowrap'}}>
+                  <Text css={{ whiteSpace: "nowrap" }}>
                     Advisor{" "}
                     <a
                       href="https://www.linkedin.com/in/jennifer-prendki

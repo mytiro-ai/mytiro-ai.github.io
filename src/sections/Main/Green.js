@@ -15,7 +15,7 @@ const getTitle = () => {
       `}
     >
       There is no right or wrong way to find productivity. <br /> <br />
-      myTiro helps you choose your path to productivity, one day at a time
+      myTiro helps you choose your path to productivity, one day at a time.
     </Title>
   );
 };
@@ -63,15 +63,24 @@ const Green = () => {
         `}
         className="position-relative overflow-hidden green-banner"
       >
-        <div className="d-flex flex-row align-items-center" style={{height: '400px', position: 'relative'}}>
-          <div style={{ height: "100%", width: '20%', overflow: 'visible'}}>
+        <div
+          className="d-flex flex-row align-items-center"
+          style={{ height: "400px", position: "relative" }}
+        >
+          <div style={{ height: "100%", width: "20%", overflow: "visible" }}>
             <img
               src={green_image}
-              style={{ position: "absolute", left: '-370px', top: '-250px' }}
+              style={{ position: "absolute", left: "-370px", top: "-250px" }}
             />
           </div>
-          <div style={{maxHeight: '400px', padding: "0 4%", marginLeft: "max(10%, 400px)"}}>
-              {getTitle()}
+          <div
+            style={{
+              maxHeight: "400px",
+              padding: "0 4%",
+              marginLeft: "max(10%, 400px)",
+            }}
+          >
+            {getTitle()}
           </div>
         </div>
         {/* <Row className="green-banner-horizontal">
