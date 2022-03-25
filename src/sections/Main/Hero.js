@@ -59,8 +59,8 @@ const Hero = () => {
               `}
               mb="2.5rem"
             >
-              MyTiro is the most comprehensive personal time, activity and focus
-              tracker.
+              myTiro is the most comprehensive personal time, activity, and
+              focus tracker.
             </Text>
             <Link>
               <Button
