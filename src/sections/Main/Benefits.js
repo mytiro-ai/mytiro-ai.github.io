@@ -65,7 +65,7 @@ const Benefits = () => (
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit3}>
-                Tracks your improvement over time
+                Calculates the benefits you have accrued
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
