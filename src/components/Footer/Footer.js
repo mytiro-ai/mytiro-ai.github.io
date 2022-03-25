@@ -87,7 +87,7 @@ const Footer = ({ isDark = true }) => {
                           offset={-70}
                           duration={500}
                         >
-                          Why we are
+                          What we do
                         </ScrollLink>
                       </li>
                       <li>
@@ -132,7 +132,7 @@ const Footer = ({ isDark = true }) => {
                 <Col xs="6" lg="3">
                   <div className="mb-5 mb-lg-4">
                     <UlStyled color={isDark ? "lightShade" : "darkShade"}>
-                      <li>
+                      {/* <li>
                         <ScrollLink
                           activeClass="active"
                           to={"team"}
@@ -143,7 +143,7 @@ const Footer = ({ isDark = true }) => {
                         >
                           Help
                         </ScrollLink>
-                      </li>
+                      </li> */}
                       <li>
                         <ScrollLink
                           activeClass="active"
@@ -175,7 +175,7 @@ const Footer = ({ isDark = true }) => {
                 <Col xs="6" lg="3">
                   <CopyRightArea dark={isDark ? 1 : 0}>
                     <Row className="align-items-left ml-1">
-                      <Col sm="6" className="text-sm-left">
+                      {/* <Col sm="6" className="text-sm-left">
                         <ul className="social-icons">
                           <li>
                             <a href="/#" target="_blank">
@@ -194,11 +194,11 @@ const Footer = ({ isDark = true }) => {
                             </a>
                           </li>
                         </ul>
-                      </Col>
+                      </Col> */}
                     </Row>
                     <Col className="text-sm-left mb-sm-0">
                       <p style={{ whitespace: "nowrap !important" }}>
-                        &copy; 2022 myTiro, All Rights Reserved
+                        &copy; 2022 YappxLabs, All Rights Reserved
                       </p>
                     </Col>
                   </CopyRightArea>

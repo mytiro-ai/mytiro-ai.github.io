@@ -60,26 +60,27 @@ const Benefits = () => (
           <Row className="mt-5">
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit1}>
-                Tracks all your activities to give you <br /> a single source of
+                Tracks all your activities to give you a single source of
                 truth
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
-              <FeatureCard imgSrc={benefit4}>
-                Learn about your habits -<br /> Insights to create time and
-                increase your focus
-              </FeatureCard>
+            <FeatureCard imgSrc={benefit3}>Tracks your benefits</FeatureCard>
             </Col>
             <Col md="6" sm="12">
-              <FeatureCard imgSrc={benefit2}>
-                Change your actions - Daily productivity tips
+            <FeatureCard imgSrc={benefit4}>
+                Learn about your habits -<br /> Insights to create time and
+                increase your focus
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit5}>Identifies your goals</FeatureCard>
             </Col>
             <Col md="6" sm="12">
-              <FeatureCard imgSrc={benefit3}>Tracks your benefits</FeatureCard>
+            <FeatureCard imgSrc={benefit2}>
+                Change your actions - Daily productivity tips
+              </FeatureCard>
+              
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit6}>
