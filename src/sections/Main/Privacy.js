@@ -40,7 +40,7 @@ const Privacy = () => {
           >
             <div className="feature-content section-title">
               <Row className="align-items-center">
-                <Col lg="0" className="order-lg-1 mb-3 ml-3">
+                <Col lg="0" className="order-lg-1 mb-1 ml-3">
                   PRIVACY
                 </Col>
               </Row>

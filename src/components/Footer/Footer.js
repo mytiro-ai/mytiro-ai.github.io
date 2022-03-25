@@ -64,7 +64,7 @@ const Footer = ({ isDark = true }) => {
       <Box bg={isDark ? "dark" : "light"}>
         <Box
           css={`
-            padding: 80px 0 60px;
+            padding: 80px 0 2%;
             margin-left: 2.5em;
             margin-right: 2.5em;
           `}

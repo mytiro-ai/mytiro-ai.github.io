@@ -98,7 +98,7 @@ const Why = () => {
           `}
         >
           <Row className="justify-content-center align-items-center">
-            <Col lg="9" className="order-lg-1 mb-3">
+            <Col lg="9" className="order-lg-1 mb-4">
               WHAT WE DO
             </Col>
           </Row>
