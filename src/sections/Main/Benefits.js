@@ -59,13 +59,13 @@ const Benefits = () => (
           </div>
           <Row className="mt-5">
             <Col md="6" sm="12">
-              <FeatureCard imgSrc={benefit1}>
-                Tracks all your activities to build a single source of truth
+            <FeatureCard imgSrc={benefit3}>
+                Calculates the benefits you have accrued
               </FeatureCard>
             </Col>
-            <Col md="6" sm="12">
-              <FeatureCard imgSrc={benefit3}>
-                Calculates the benefits you have accrued
+            <Col md="6" sm="12">    
+              <FeatureCard imgSrc={benefit1}>
+                Tracks all your activities to build a single source of truth
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
