@@ -198,7 +198,7 @@ const Footer = ({ isDark = true }) => {
                     </Row>
                     <Col className="text-sm-left mb-sm-0">
                       <p style={{ whitespace: "nowrap !important" }}>
-                        &copy; 2022 YappxLabs, All Rights Reserved
+                        &copy; 2022 Yappx Labs, All Rights Reserved
                       </p>
                     </Col>
                   </CopyRightArea>

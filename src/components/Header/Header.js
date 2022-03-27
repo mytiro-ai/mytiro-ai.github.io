@@ -348,6 +348,9 @@ const Header = ({ isDark = false }) => {
                                   offset={-70}
                                   duration={500}
                                   key={index}
+                                  css={{
+                                    cursor: "pointer"
+                                  }}
                                 >
                                   {label}
                                 </ScrollLink>
