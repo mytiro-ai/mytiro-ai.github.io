@@ -2,10 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { Link } from "gatsby";
-import topCurve from "../../assets/SVG/Line@2x.svg";
+import topCurve from "../../assets/SVG/Line.svg";
 import Guy from "../../assets/SVG/Banner.svg";
 import Banner_mobile from "../../assets/SVG/Banner_mobile.svg";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
+import { device } from "../../utils";
 
 const Hero = () => {
   const handleClick = (e) => {
@@ -33,8 +34,8 @@ const Hero = () => {
             className="mt-lg-4 img-fluid position-absolute"
             id="topcurve-image"
             css={`
-              width: 100%;
               position: fixed;
+              width: 100%; 
             `}
           />
         </Col>
@@ -44,7 +45,13 @@ const Hero = () => {
         className="position-relative"
         id="hero"
         css={`
-          margin-top: 8rem;
+          margin-top: 5rem;
+          @media ${device.lg} {
+            margin-top: 10rem;
+          }
+          @media ${device.xl} {
+            margin-top: 14rem;
+          }
         `}
       >
         <Container>
@@ -57,6 +64,7 @@ const Hero = () => {
               css={`
                 margin-top: 1%;
                 color: #050505;
+                font-weight: 500;
               `}
               mb="2.5rem"
             >
