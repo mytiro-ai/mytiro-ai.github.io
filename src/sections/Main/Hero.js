@@ -37,6 +37,9 @@ const Hero = () => {
               position: fixed;
               width: 100%; 
               top: -1rem;
+              @media ${device.xl} {
+                top: -4.4rem;
+              }
             `}
           />
         </Col>
@@ -51,7 +54,7 @@ const Hero = () => {
             margin-top: 8rem;
           }
           @media ${device.xl} {
-            margin-top: 12rem;
+            margin-top: 8rem;
           }
         `}
       >
@@ -101,7 +104,7 @@ const Hero = () => {
             left: 2em;
             z-index: 0;
             @media ${device.xl} {
-              margin-top: -6rem;
+              margin-top: -8rem;
             }
           `}
         />
