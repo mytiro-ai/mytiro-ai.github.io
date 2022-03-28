@@ -36,8 +36,8 @@ const SiteHeader = styled.header`
     }
   }
 
-  .navbar{
-    @media ${device.md}{
+  .navbar {
+    @media ${device.md} {
       padding: 0 0;
     }
   }
@@ -290,7 +290,9 @@ const Header = ({ isDark = false }) => {
       // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
       label: "Recruitment for myTiro",
     });
-    window.open("https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing");
+    window.open(
+      "https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing"
+    );
   };
 
   return (
@@ -301,17 +303,23 @@ const Header = ({ isDark = false }) => {
         }`}
         dark={isDark ? 1 : 0}
       >
-        <Container fluid css={{padding: '0 2% !important'}}>
+        <Container fluid css={{ padding: "0 2% !important" }}>
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
-            <div
+            <ScrollLink
               className="brand-logo"
-              css={`
-                width: 160px;
-                height: 40px;
-              `}
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              key={-1}
+              css={{
+                cursor: "pointer",
+              }}
             >
               <Logo white={isDark} />
-            </div>
+            </ScrollLink>
             <div className="collapse navbar-collapse">
               <div className="navbar-nav ml-lg-auto mr-3">
                 <Menu
@@ -349,7 +357,7 @@ const Header = ({ isDark = false }) => {
                                   duration={500}
                                   key={index}
                                   css={{
-                                    cursor: "pointer"
+                                    cursor: "pointer",
                                   }}
                                 >
                                   {label}
@@ -364,12 +372,14 @@ const Header = ({ isDark = false }) => {
                 </Menu>
               </div>
             </div>
-            <div className="header-btns ml-auto ml-lg-0 d-none d-md-block">
+            <div className="header-btns ml-auto d-none d-md-block">
               <Link href="/">
                 <a className="ml-lg-5 ">Sign in</a>
               </Link>
               <Link>
-                <Button className="ml-md-3"  onClick={handleClick}>Join us</Button>
+                <Button className="ml-md-3" onClick={handleClick}>
+                  Join us
+                </Button>
               </Link>
             </div>
             <ToggleButton
@@ -384,7 +394,7 @@ const Header = ({ isDark = false }) => {
               aria-label="Toggle navigation"
               onClick={gContext.toggleOffCanvas}
               dark={isDark ? 1 : 0}
-              style={{marginLeft: 'auto'}}
+              style={{ marginLeft: "auto" }}
             >
               {/* <i className="icon icon-simple-remove icon-close"></i> */}
               <i className="icon icon-menu-34 icon-burger d-block"></i>

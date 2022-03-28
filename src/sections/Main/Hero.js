@@ -42,6 +42,7 @@ const Hero = () => {
 
       <Section
         className="position-relative"
+        id="hero"
         css={`
           margin-top: 8rem;
         `}
