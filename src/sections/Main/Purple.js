@@ -21,8 +21,6 @@ const Purple = () => (
 
     <Section
       css={`
-        background-image: url(${purple});
-        background-size: cover;
         z-index: 1;
         padding: 6% 10%;
         border-radius: 0;
@@ -37,6 +35,7 @@ const Purple = () => (
       `}
       className="position-relative img-fluid d-flex-column align-items-center justify-content-center"
     >
+      <img src={purple} className="purple-banner-image" />
       <div className="d-flex flex-column justify-content-center align-items-center text-center">
         <Title color="light">
           At myTiro, we help you understand
