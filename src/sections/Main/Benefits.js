@@ -59,33 +59,30 @@ const Benefits = () => (
           </div>
           <Row className="mt-5">
             <Col md="6" sm="12">
-            <FeatureCard imgSrc={benefit3}>
-                Calculates the benefits you have accrued
+              <FeatureCard imgSrc={benefit1}>
+                Tracks all your activities to give you a single source of truth
               </FeatureCard>
             </Col>
-            <Col md="6" sm="12">    
-              <FeatureCard imgSrc={benefit1}>
-                Tracks all your activities to build a single source of truth
-              </FeatureCard>
+            <Col md="6" sm="12">
+              <FeatureCard imgSrc={benefit3}>Identifies your goals</FeatureCard>
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit4}>
-                Generates insights that help you understand your habits and
-                patterns
+                Learn about your habits -<br /> Insights to create time and
+                increase your focus
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
-              <FeatureCard imgSrc={benefit5}>Identifies your goals</FeatureCard>
+              <FeatureCard imgSrc={benefit5}>Tracks your benefits</FeatureCard>
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit2}>
-                Offers daily productivity tips to help you create time and
-                increase focus
+                Change your actions - Daily productivity tips
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit6}>
-                Integrates with existing applications
+                Works with existing apps
               </FeatureCard>
             </Col>
           </Row>
