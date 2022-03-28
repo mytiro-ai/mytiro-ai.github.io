@@ -10,9 +10,9 @@ import pattern from "../../assets/Png/Pattern_5.png";
 
 const ShapeBottom = styled(Box)`
   position: absolute;
-  bottom: -22.5vw;
-  right: -10vw;
-  width: 21.8vw;
+  bottom: -18.5vw;
+  right: 0vw;
+  width: 18vw;
 `;
 
 const Join = () => {
