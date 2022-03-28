@@ -36,6 +36,7 @@ const Hero = () => {
             css={`
               position: fixed;
               width: 100%; 
+              top: -1rem;
             `}
           />
         </Col>
@@ -47,10 +48,10 @@ const Hero = () => {
         css={`
           margin-top: 5rem;
           @media ${device.lg} {
-            margin-top: 10rem;
+            margin-top: 8rem;
           }
           @media ${device.xl} {
-            margin-top: 14rem;
+            margin-top: 12rem;
           }
         `}
       >
@@ -94,11 +95,14 @@ const Hero = () => {
           className="img-fluid"
           id="guy-image"
           css={`
-            margin-top: -5rem;
+            margin-top: -10rem;
             position: relative;
             width: 96%;
             left: 2em;
             z-index: 0;
+            @media ${device.xl} {
+              margin-top: -6rem;
+            }
           `}
         />
       </Section>

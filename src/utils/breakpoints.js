@@ -2,7 +2,7 @@ export const breakpoints = {
   sm: 576, //Small screen start
   md: 768, //Medium screen start
   lg: 992, //Large screen start
-  xl: 1200, //Extra Large screen start
+  xl: 1480, //Extra Large screen start
 };
 
 export const device = {

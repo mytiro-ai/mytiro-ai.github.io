@@ -66,7 +66,7 @@ const Why = () => {
     <>
       <ShapeBottomLeft
         id="green-pattern-image"
-        css={{ position: "absolute", bottom: "-60vh", left: "-300px" }}
+        css={{ position: "absolute", bottom: "-800px", left: "-300px" }}
       >
         <img src={greenPattern} alt="" className="img-fluid" />
       </ShapeBottomLeft>

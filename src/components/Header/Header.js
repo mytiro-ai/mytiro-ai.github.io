@@ -271,7 +271,7 @@ const Header = ({ isDark = false }) => {
     } else {
       setShowScrolling(false);
     }
-    if (currPos.y < -300) {
+    if (currPos.y < 0) {
       setShowReveal(true);
     } else {
       setShowReveal(false);

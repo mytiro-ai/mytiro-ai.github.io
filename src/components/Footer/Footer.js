@@ -71,7 +71,21 @@ const Footer = ({ isDark = true }) => {
         >
           <Row className="justify-content-center">
             <Col lg="2" md="4">
+            <ScrollLink
+              className="brand-logo"
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              key={-1}
+              css={{
+                cursor: "pointer",
+              }}
+            >
               <Logo white={isDark} />
+            </ScrollLink>
             </Col>
             <Col lg="10" md="8" className="mt-5 mt-lg-0">
               <Row>
