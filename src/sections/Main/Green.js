@@ -3,7 +3,8 @@ import { Title, Section, Box } from "../../components/Core";
 
 import green from "../../assets/Png/Image_2.png";
 import green_image from "../../assets/Png/green_banner_pattern_image.png";
-import green_mobile from "../../assets/Png/Image_2_mobile.png";
+import green_mobile from "../../assets/Png/green_background_mobile.png"; 
+import green_mobile_image from "../../assets/Png/green_pattern_mobile.png";
 
 const getTitle = () => {
   return (
@@ -31,12 +32,14 @@ const Green = () => {
           z-index: 1;
           margin-bottom: 5%;
           height: auto;
-          min-height: 1000px;
-          padding: 2% 4%;
+          padding-top: 0;
+          padding-bottom: 100px;
         `}
         className="position-relative overflow-hidden green-banner-mobile"
       >
-        <Box css={{ height: "55%", minHeight: "100vw" }}></Box>
+        <Box>
+          <img src={green_mobile_image} width="100%" />
+        </Box>
         <Box>
           {getTitle()}
           {/* <Text
