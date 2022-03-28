@@ -30,6 +30,7 @@ const Privacy = () => {
         id="privacy"
         css={`
           padding-top: 10px !important;
+          margin-bottom: 2.8rem;
         `}
       >
         <Row className="align-items-center">
