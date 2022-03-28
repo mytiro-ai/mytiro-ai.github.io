@@ -86,6 +86,9 @@ const Footer = ({ isDark = true }) => {
                           smooth={true}
                           offset={-70}
                           duration={500}
+                          css={{
+                            cursor: 'pointer'
+                          }}
                         >
                           What we do
                         </ScrollLink>
@@ -98,6 +101,9 @@ const Footer = ({ isDark = true }) => {
                           smooth={true}
                           offset={-70}
                           duration={500}
+                          css={{
+                            cursor: 'pointer'
+                          }}
                         >
                           Benefits
                         </ScrollLink>
@@ -110,6 +116,9 @@ const Footer = ({ isDark = true }) => {
                           smooth={true}
                           offset={-70}
                           duration={500}
+                          css={{
+                            cursor: 'pointer'
+                          }}
                         >
                           Privacy
                         </ScrollLink>
@@ -122,6 +131,9 @@ const Footer = ({ isDark = true }) => {
                           smooth={true}
                           offset={-70}
                           duration={500}
+                          css={{
+                            cursor: 'pointer'
+                          }}
                         >
                           Team
                         </ScrollLink>
@@ -152,6 +164,9 @@ const Footer = ({ isDark = true }) => {
                           smooth={true}
                           offset={-70}
                           duration={500}
+                          css={{
+                            cursor: 'pointer'
+                          }}
                         >
                           Contact Us
                         </ScrollLink>
@@ -164,6 +179,9 @@ const Footer = ({ isDark = true }) => {
                           smooth={true}
                           offset={-70}
                           duration={500}
+                          css={{
+                            cursor: 'pointer'
+                          }}
                         >
                           Terms & Conditions
                         </ScrollLink>
