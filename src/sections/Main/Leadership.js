@@ -87,7 +87,7 @@ const Leadership = () => {
           <Col lg="3" className="order-lg-1">
             <div className="feature-content section-title">
               <Row className="leadership-title">
-                <Col lg="0" className="order-lg-1 mb-3">
+                <Col lg="0" className="order-lg-1 mb-3 section-title-header">
                   TEAM
                 </Col>
               </Row>

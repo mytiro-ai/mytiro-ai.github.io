@@ -66,7 +66,7 @@ const Why = () => {
     <>
       <ShapeBottomLeft
         id="green-pattern-image"
-        css={{ position: "absolute", bottom: "-90vh", left: "-300px" }}
+        css={{ position: "absolute", bottom: "-60vh", left: "-300px" }}
       >
         <img src={greenPattern} alt="" className="img-fluid" />
       </ShapeBottomLeft>
@@ -76,11 +76,9 @@ const Why = () => {
         css={`
           margin-top: -2.6em;
           z-index: 1;
+          margin-bottom: 2.8em;
           @media ${device.lg} {
             margin-bottom: 7.8em;
-          }
-          @media only screen and( min-width: ${device.md}) {
-            margin-bottom: 2.8em;
           }
         `}
       >
@@ -98,12 +96,12 @@ const Why = () => {
           `}
         >
           <Row className="justify-content-center align-items-center">
-            <Col lg="9" className="order-lg-1 mb-4 section-title">
+            <Col lg="9" className="order-lg-1 mb-4 section-title-header">
               WHAT WE DO
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg="9" className="order-lg-1 mt-lg-0">
+            <Col lg="9" className="order-lg-1 mt-2">
               <Box>
                 <Text
                   css={`
@@ -127,13 +125,13 @@ const Why = () => {
                   `}
                 >
                   We understand{" "}
-                  <span style={{ whiteSpace: "nowrap" }}>you - </span>
-                  <span
+                  <span style={{ whiteSpace: "nowrap" }}>you -<br/></span>
+                  your <span
                     css={`
                       color: #643992;
                     `}
                   >
-                    your context, patterns, and habits.
+                    context, patterns, and habits.
                   </span>
                 </Text>{" "}
                 <div>

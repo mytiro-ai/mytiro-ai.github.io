@@ -40,7 +40,7 @@ const Privacy = () => {
           >
             <div className="feature-content section-title">
               <Row className="align-items-center">
-                <Col lg="0" className="order-lg-1 mb-1 ml-3">
+                <Col lg="0" className="order-lg-1 mb-1 ml-3 section-title-header">
                   PRIVACY
                 </Col>
               </Row>
@@ -54,6 +54,7 @@ const Privacy = () => {
                       font-weight: 400;
                       font-size: 20px;
                       line-height: 30px;
+                      color: #5D626F;
                     `}
                   >
                     Your data is fully encrypted. No human can access your data.

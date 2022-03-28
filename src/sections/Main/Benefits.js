@@ -49,7 +49,7 @@ const Benefits = () => (
         <Col lg="7" className="order-lg-2" css={{ padding: "0 6%!important" }}>
           <div className="feature-content section-title">
             <Row className="align-items-center">
-              <Col lg="0" className="order-lg-1 mb-1 ml-3 section-title">
+              <Col lg="0" className="order-lg-1 mb-1 ml-3 section-title-header">
                 BENEFITS
               </Col>
             </Row>
