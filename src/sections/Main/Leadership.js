@@ -7,6 +7,7 @@ import rajeev from "../../assets/SVG/Rajeev Ved.svg";
 import jeniffer from "../../assets/SVG/Jeniffer Prendki.svg";
 import { Title, Section, Box, Text } from "../../components/Core";
 import pattern4 from "../../assets/SVG/Pattern_4@2x.svg";
+import linkedInIcon from '../../assets/SVG/LinkedIn_icon.svg';
 
 const ShapeBottomLeft = styled(Box)`
   position: absolute;
@@ -22,10 +23,10 @@ const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
   <Box bg="transparent" borderRadius={10} mb={4} {...rest} css={{}}>
     <Box
       fontSize="28px"
-      className="d-flex justify-content-center align-items-center"
+      className="d-flex justify-content-lg-center align-items-center"
       css={{ backgroundColor: "transparent", marginBottom: "24px" }}
     >
-      <img src={imgSrc} width="90%" />
+      <img src={imgSrc} width="85%" />
     </Box>
     <div>
       <Text fontSize={2}>{children}</Text>
@@ -128,10 +129,9 @@ const Leadership = () => {
                     <a
                       href="https://www.linkedin.com/in/shoaib30/"
                       target="_blank"
-                      className="ml-2"
-                      style={{verticalAlign: 'middle'}}
+                      className="ml-1"
                     >
-                      <i className="icon icon-logo-linkedin"></i>
+                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -181,9 +181,9 @@ const Leadership = () => {
                       href="https://www.linkedin.com/in/rajeev-ved/"
                       target="_blank"
                       className="ml-2"
-                      style={{verticalAlign: 'middle'}}
+                      style={{height:"20%"}}
                     >
-                      <i className="icon icon-logo-linkedin"></i>
+                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -233,11 +233,10 @@ const Leadership = () => {
                     Advisor{" "}
                     <a
                       href="https://www.linkedin.com/in/jennifer-prendki"
-                      className="ml-2"
-                      style={{verticalAlign: 'middle'}}                 
+                      className="ml-1"           
                       target="_blank"
                     >
-                      <i className="icon icon-logo-linkedin"></i>
+                      <img src={linkedInIcon} height="26px" ></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
