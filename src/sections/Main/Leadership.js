@@ -5,6 +5,9 @@ import { Row, Col } from "react-bootstrap";
 import shoaib from "../../assets/SVG/Shoaib Ahmed.svg";
 import rajeev from "../../assets/SVG/Rajeev Ved.svg";
 import jeniffer from "../../assets/SVG/Jeniffer Prendki.svg";
+import aditya from "../../assets/SVG/Aditya Giridharan.svg";
+import pranav from "../../assets/SVG/Pranav Iyer.svg";
+import rithvik from "../../assets/SVG/Rithvik Konappa.svg";
 import { Title, Section, Box, Text } from "../../components/Core";
 import pattern4 from "../../assets/SVG/Pattern_4@2x.svg";
 import linkedInIcon from '../../assets/SVG/LinkedIn_icon.svg';
@@ -23,10 +26,10 @@ const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
   <Box bg="transparent" borderRadius={10} mb={4} {...rest} css={{}}>
     <Box
       fontSize="28px"
-      className="d-flex justify-content-lg-center align-items-center"
+      className="d-flex align-items-center"
       css={{ backgroundColor: "transparent", marginBottom: "24px" }}
     >
-      <img src={imgSrc} width="85%" />
+      <img src={imgSrc} width="80%" />
     </Box>
     <div>
       <Text fontSize={2}>{children}</Text>
@@ -38,6 +41,9 @@ const Leadership = () => {
   const [readShoaib, setReadShoaib] = useState(false);
   const [readRajeev, setReadRajeev] = useState(false);
   const [readJeniffer, setReadJeniffer] = useState(false);
+  const [readAditya, setreadAditya] = useState(false);
+  const [readRithvik, setreadRithvik] = useState(false);
+  const [readPranav, setreadPranav] = useState(false);
 
   const openLinkedIn = (link) => {
     window.open(link);
@@ -56,6 +62,18 @@ const Leadership = () => {
     `Dr. Prendki, PhD from Sorbonne, is advising myTiro on how to scale high-performance ML and build a data-driven approach.`,
     `She is the founder and CEO of Alectio. Previously, she was the VP of Machine Learning at Figure Eight, the Chief Data Scientist at Atlassian, and a Senior Manager of Data Science in the Search Team at Walmart.`,
   ];
+  const AdithyaContent = [
+    `Rajeev started myTiro because he could not find a simple tool or technique that told him where, when, and how he was spending his time and how he could improve his productivity daily.`,
+    `He has been part of the founding team of two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
+  ];
+  const PranavContent = [
+    `Rajeev started myTiro because he could not find a simple tool or technique that told him where, when, and how he was spending his time and how he could improve his productivity daily.`,
+    `He has been part of the founding team of two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
+  ];
+  const RithvikContent = [
+    `Rajeev started myTiro because he could not find a simple tool or technique that told him where, when, and how he was spending his time and how he could improve his productivity daily.`,
+    `He has been part of the founding team of two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
+  ];
 
   const readMoreShoaibData = () => {
     setReadShoaib(!readShoaib);
@@ -65,6 +83,15 @@ const Leadership = () => {
   };
   const readMoreJenifferData = () => {
     setReadJeniffer(!readJeniffer);
+  };
+  const readMoreAdityaData = () => {
+    setreadAditya(!readAditya);
+  };
+  const readMorePranavData = () => {
+    setreadPranav(!readPranav);
+  };
+  const readMoreRithvikData = () => {
+    setreadRithvik(!readRithvik);
   };
 
   return (
@@ -94,7 +121,7 @@ const Leadership = () => {
               </Row>
               <div className="feature-content section-title leadership-title">
                 <Title color="black" className="mb-0 ">
-                  Leadership
+                  Leadership & Advisors
                 </Title>
               </div>
             </div>
@@ -102,7 +129,7 @@ const Leadership = () => {
               <img src={pattern4} alt="" className="img-fluid" />
             </ShapeBottomLeft> */}
           </Col>
-          <Col lg="9" className="pl-lg-5 order-lg-2">
+          <Col lg="9" className="pl-lg-5 order-lg-2 mb-4">
             <Row>
               <Col md="6" lg="4">
                 <FeatureCard imgSrc={shoaib}>
@@ -253,6 +280,167 @@ const Leadership = () => {
                   ) : (
                     <button
                       onClick={readMoreJenifferData}
+                      className="readmore-button"
+                    >
+                      Read More <i className="icon icon-small-down" />
+                    </button>
+                  )}
+                </FeatureCard>
+              </Col>
+            </Row>
+          </Col>
+          <Col lg="3" className="order-lg-3"></Col>
+          <Col lg="9" className="pl-lg-5 order-lg-4 mt-4">
+            <Row>
+              <Col md="6" lg="4">
+                <FeatureCard imgSrc={aditya}>
+                  <Text
+                    className="mb-0"
+                    css={`
+                      color: black;
+                      font-weight: 650;
+                      font-size: 2.5rem;
+
+                      @media ${device.xs} {
+                        font-size: 1.5rem;
+                      }
+
+                      @media ${device.lg} {
+                        font-size: 2.1rem;
+                      }
+                    `}
+                  >
+                    Aditya Giridharan
+                  </Text>
+                  <Text css={{ whiteSpace: "nowrap" }}>
+                    Engineering{" "}
+                    <a
+                      href="https://in.linkedin.com/in/adityagiridharan"
+                      target="_blank"
+                      className="ml-1"
+                    >
+                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
+                    </a>
+                  </Text>
+                  <Text variant="small" className="mt-1">
+                    {AdithyaContent[0]} <br />
+                    {readAditya ? AdithyaContent[1] : ""}
+                  </Text>
+                  {readAditya ? (
+                    <button
+                      onClick={readMoreAdityaData}
+                      className="readmore-button"
+                    >
+                      Read Less <i className="icon icon-small-up" />
+                    </button>
+                  ) : (
+                    <button
+                      onClick={readMoreAdityaData}
+                      className="readmore-button"
+                    >
+                      Read More <i className="icon icon-small-down" />
+                    </button>
+                  )}
+                </FeatureCard>
+              </Col>
+
+              <Col md="6" lg="4">
+                <FeatureCard imgSrc={pranav}>
+                  <Text
+                    color="heading"
+                    css={`
+                      font-weight: 650;
+                      font-size: 2.5rem;
+
+                      @media ${device.xs} {
+                        font-size: 1.5rem;
+                      }
+
+                      @media ${device.lg} {
+                        font-size: 2.1rem;
+                      }
+                    `}
+                  >
+                    Pranav Iyer
+                  </Text>
+                  <Text css={{ whiteSpace: "nowrap" }}>
+                    Engineering
+                    <a
+                      href="https://in.linkedin.com/in/pranaviyer24"
+                      target="_blank"
+                      className="ml-2"
+                      style={{height:"20%"}}
+                    >
+                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
+                    </a>
+                  </Text>
+                  <Text variant="small" className="mt-1">
+                    {PranavContent[0]} <br />
+                    {readPranav ? PranavContent[1] : ""}
+                  </Text>
+                  {readPranav ? (
+                    <button
+                      onClick={readMorePranavData}
+                      className="readmore-button"
+                      css={{ zIndex: 2 }}
+                    >
+                      Read Less <i className="icon icon-small-up" />
+                    </button>
+                  ) : (
+                    <button
+                      onClick={readMorePranavData}
+                      className="readmore-button"
+                    >
+                      Read More <i className="icon icon-small-down" />
+                    </button>
+                  )}
+                </FeatureCard>
+              </Col>
+
+              <Col md="6" lg="4">
+                <FeatureCard imgSrc={rithvik}>
+                  <Text
+                    className="mb-0"
+                    css={`
+                      color: black;
+                      font-weight: 650;
+                      font-size: 2.5rem;
+
+                      @media ${device.xs} {
+                        font-size: 1.5rem;
+                      }
+
+                      @media ${device.lg} {
+                        font-size: 2.1rem;
+                      }
+                    `}
+                  >
+                    Rithvik Konappa
+                  </Text>
+                  <Text css={{ whiteSpace: "nowrap" }}>
+                    Engineering{" "}
+                    <a
+                      href="https://in.linkedin.com/in/rithvik-konappa-3b90261b3"
+                      className="ml-1"           
+                      target="_blank"
+                    >
+                      <img src={linkedInIcon} height="26px" ></img>
+                    </a>
+                  </Text>
+                  <Text variant="small" className="mt-1">
+                    {RithvikContent[0]} <br />
+                    {readRithvik ? RithvikContent[1] : ""}
+                  </Text>
+                  {readRithvik ? (
+                    <button
+                      onClick={readMoreRithvikData}
+                      className="readmore-button"
+                    >
+                      Read Less <i className="icon icon-small-up" />
+                    </button>
+                  ) : (
+                    <button
+                      onClick={readMoreRithvikData}
                       className="readmore-button"
                     >
                       Read More <i className="icon icon-small-down" />

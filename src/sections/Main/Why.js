@@ -74,7 +74,7 @@ const Why = () => {
         className="position-relative"
         id="why"
         css={`
-          margin-top: -2.6em;
+          margin-top: 0.2em;
           z-index: 1;
           margin-bottom: 2.8em;
           @media ${device.lg} {
