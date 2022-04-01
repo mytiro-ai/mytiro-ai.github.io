@@ -27,7 +27,7 @@ const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
     <Box
       fontSize="28px"
       className="d-flex align-items-center"
-      css={{ backgroundColor: "transparent", marginBottom: "2%" }}
+      css={{ backgroundColor: "transparent", marginBottom: "4%" }}
     >
       <img src={imgSrc} width="70%" />
     </Box>
@@ -441,6 +441,115 @@ const Leadership = () => {
                   ) : (
                     <button
                       onClick={readMoreRithvikData}
+                      className="readmore-button"
+                    >
+                      Read More <i className="icon icon-small-down" />
+                    </button>
+                  )}
+                </FeatureCard>
+              </Col>
+            </Row>
+          </Col>
+          <Col lg="3" className="order-lg-5"></Col>
+          <Col lg="9" className="pl-lg-5 order-lg-6 mt-4">
+            <Row>
+              <Col md="6" lg="4">
+                <FeatureCard imgSrc={aditya}>
+                  <Text
+                    className="mb-0"
+                    css={`
+                      color: black;
+                      font-weight: 650;
+                      font-size: 2.1rem;
+
+                      @media ${device.xs} {
+                        font-size: 1.5rem;
+                      }
+
+                      @media ${device.lg} {
+                        font-size: 1.8rem;
+                      }
+                    `}
+                  >
+                    Mohammed Hasan
+                  </Text>
+                  <Text css={{ whiteSpace: "nowrap" }}>
+                    Engineering{" "}
+                    <a
+                      href="https://in.linkedin.com/in/adityagiridharan"
+                      target="_blank"
+                      className="ml-1"
+                    >
+                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
+                    </a>
+                  </Text>
+                  <Text variant="small" className="mt-1">
+                    {AdithyaContent[0]} <br />
+                    {readAditya ? AdithyaContent[1] : ""}
+                  </Text>
+                  {readAditya ? (
+                    <button
+                      onClick={readMoreAdityaData}
+                      className="readmore-button"
+                    >
+                      Read Less <i className="icon icon-small-up" />
+                    </button>
+                  ) : (
+                    <button
+                      onClick={readMoreAdityaData}
+                      className="readmore-button"
+                    >
+                      Read More <i className="icon icon-small-down" />
+                    </button>
+                  )}
+                </FeatureCard>
+              </Col>
+
+              <Col md="6" lg="4">
+                <FeatureCard imgSrc={pranav}>
+                  <Text
+                    color="heading"
+                    css={`
+                      font-weight: 650;
+                      font-size: 2.1rem;
+
+                      @media ${device.xs} {
+                        font-size: 1.5rem;
+                      }
+
+                      @media ${device.lg} {
+                        font-size: 1.8rem;
+                      }
+                    `}
+                  >
+                    You
+                  </Text>
+                  <Text css={{ whiteSpace: "nowrap" }}>
+                    Engineering
+                    <a
+                      href="https://in.linkedin.com/in/pranaviyer24"
+                      target="_blank"
+                      className="ml-2"
+                      style={{height:"20%"}}
+                    >
+                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
+                    </a>
+                  </Text>
+                  <Text variant="small" className="mt-1">
+                    {PranavContent[0]} <br />
+                    {readPranav ? PranavContent[1] : ""}
+                  </Text>
+                  {readPranav ? (
+                    <button
+                      onClick={readMorePranavData}
+                      className="readmore-button"
+                      css={{ zIndex: 2 }}
+                    >
+                      Read Less <i className="icon icon-small-up" />
+                    </button>
+                  ) : (
+                    <button
+                      onClick={readMorePranavData}
                       className="readmore-button"
                     >
                       Read More <i className="icon icon-small-down" />
