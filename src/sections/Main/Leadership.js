@@ -547,7 +547,7 @@ const Leadership = () => {
                 </FeatureCard>
               </Col>
 
-              <Col md="6" lg="4" className="ml-md-1">
+              <Col md="6" lg="4">
                 <FeatureCard imgSrc={you}>
                   <Text
                     color="heading"
