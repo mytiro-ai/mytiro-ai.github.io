@@ -161,19 +161,27 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
         ))}
       </ListGroup>
       <div className="header-btns header-btns-menu ml-auto ml-lg-0">
-        <Link href="/">
+        <Link
+          href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing"
+          target="_blank"
+        >
           <a
             className="ml-lg-5 mr-lg-1"
             css={`
               margin-bottom: 3em;
             `}
           >
-            Sign in
+            Join The Team
           </a>
         </Link>
         <br />
         <Link>
-          <Button className="ml-lg-3 mt-3" onClick={()=> window.open("https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing")}>Join us</Button>
+          <Button
+            className="ml-lg-3 mt-3"
+            onClick={() => window.open("https://forms.gle/yhfK15wAEx71m6AGA")}
+          >
+            Try myTiro
+          </Button>
         </Link>
       </div>
     </NestedMenuContainer>
