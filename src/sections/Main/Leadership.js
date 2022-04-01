@@ -54,10 +54,7 @@ const Leadership = () => {
   const [readAditya, setreadAditya] = useState(false);
   const [readRithvik, setreadRithvik] = useState(false);
   const [readPranav, setreadPranav] = useState(false);
-
-  const openLinkedIn = (link) => {
-    window.open(link);
-  }
+  const [readHasan, setreadHasan] = useState(false);
 
   const ShoaibContent = [
     `Shoaib is an experienced technology executive whose long term and persistent effort to automate mundane tasks through deep tech led him to myTiro.`,
@@ -85,6 +82,11 @@ const Leadership = () => {
     `Dynamic and passionate, he aspires to bring this productivity tool to every professional’s device.`,
   ];
 
+  const HasanContent = [
+    `Rithvik is an enthusiastic developer who fell in love with the idea of myTiro.`,
+    `Dynamic and passionate, he aspires to bring this productivity tool to every professional’s device.`,
+  ];
+
   const readMoreShoaibData = () => {
     setReadShoaib(!readShoaib);
   };
@@ -102,6 +104,10 @@ const Leadership = () => {
   };
   const readMoreRithvikData = () => {
     setreadRithvik(!readRithvik);
+  };
+
+  const readMoreHasanData = () => {
+    setreadRithvik(!readHasan);
   };
 
   return (
@@ -492,19 +498,19 @@ const Leadership = () => {
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
-                    {AdithyaContent[0]} <br />
-                    {readAditya ? AdithyaContent[1] : ""}
+                    {HasanContent[0]} <br />
+                    {readAditya ? HasanContent[1] : ""}
                   </Text>
                   {readAditya ? (
                     <button
-                      onClick={readMoreAdityaData}
+                      onClick={readMoreHasanData}
                       className="readmore-button"
                     >
                       Read Less <i className="icon icon-small-up" />
                     </button>
                   ) : (
                     <button
-                      onClick={readMoreAdityaData}
+                      onClick={readMoreHasanData}
                       className="readmore-button"
                     >
                       Read More <i className="icon icon-small-down" />
