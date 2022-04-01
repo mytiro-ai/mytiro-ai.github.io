@@ -12,8 +12,9 @@ import hasan from "../../assets/SVG/Rithvik Konappa.svg";
 import you from "../../assets/SVG/You.svg";
 import { Title, Section, Box, Text } from "../../components/Core";
 import pattern4 from "../../assets/SVG/Pattern_4@2x.svg";
-import linkedInIcon from '../../assets/SVG/LinkedIn_icon.svg';
+import linkedInIcon from "../../assets/SVG/LinkedIn_icon.svg";
 import pattern from "../../assets/Png/Pattern_5.png";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 const ShapeBottomLeft = styled(Box)`
   position: absolute;
@@ -28,18 +29,25 @@ const ShapeBottomLeft = styled(Box)`
 const ShapeBottom = styled(Box)`
   position: absolute;
   bottom: -18.5vw;
-  right: 0vw;
+  right: -2.5em;
   width: 18vw;
 `;
 
 const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
-  <Box bg="transparent" borderRadius={10} mb={4} {...rest} css={{}} className="mr-md-4">
+  <Box
+    bg="transparent"
+    borderRadius={10}
+    mb={4}
+    {...rest}
+    css={{}}
+    className="mr-md-4"
+  >
     <Box
       fontSize="28px"
       className="d-flex align-items-center"
       css={{ backgroundColor: "transparent", marginBottom: "4%" }}
     >
-      <img src={imgSrc} width="70%" style={{maxWidth: "285px"}}/>
+      <img src={imgSrc} width="70%" style={{ maxWidth: "285px" }} />
     </Box>
     <div>
       <Text fontSize={2}>{children}</Text>
@@ -121,8 +129,8 @@ const Leadership = () => {
         `}
       >
         <ShapeBottom id="join-pattern">
-        <img src={pattern} alt="" className="img-fluid" />
-      </ShapeBottom>
+          <img src={pattern} alt="" className="img-fluid" />
+        </ShapeBottom>
         <img
           src={pattern4}
           alt=""
@@ -172,7 +180,11 @@ const Leadership = () => {
                       target="_blank"
                       className="ml-1"
                     >
-                      <img src={linkedInIcon} height="21px" style={{margin: 'auto'}}></img>
+                      <img
+                        src={linkedInIcon}
+                        height="24px"
+                        style={{ margin: "auto" }}
+                      ></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -222,9 +234,13 @@ const Leadership = () => {
                       href="https://www.linkedin.com/in/rajeev-ved/"
                       target="_blank"
                       className="ml-2"
-                      style={{height:"20%"}}
+                      style={{ height: "20%" }}
                     >
-                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
+                      <img
+                        src={linkedInIcon}
+                        height="24px"
+                        style={{ margin: "auto" }}
+                      ></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -274,10 +290,10 @@ const Leadership = () => {
                     Advisor{" "}
                     <a
                       href="https://www.linkedin.com/in/jennifer-prendki"
-                      className="ml-1"           
+                      className="ml-1"
                       target="_blank"
                     >
-                      <img src={linkedInIcon} height="26px" ></img>
+                      <img src={linkedInIcon} height="24px"></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -333,7 +349,11 @@ const Leadership = () => {
                       target="_blank"
                       className="ml-1"
                     >
-                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
+                      <img
+                        src={linkedInIcon}
+                        height="24px"
+                        style={{ margin: "auto" }}
+                      ></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -383,9 +403,13 @@ const Leadership = () => {
                       href="https://in.linkedin.com/in/pranaviyer24"
                       target="_blank"
                       className="ml-2"
-                      style={{height:"20%"}}
+                      style={{ height: "20%" }}
                     >
-                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
+                      <img
+                        src={linkedInIcon}
+                        height="24px"
+                        style={{ margin: "auto" }}
+                      ></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -435,10 +459,10 @@ const Leadership = () => {
                     Engineering{" "}
                     <a
                       href="https://in.linkedin.com/in/rithvik-konappa-3b90261b3"
-                      className="ml-1"           
+                      className="ml-1"
                       target="_blank"
                     >
-                      <img src={linkedInIcon} height="26px" ></img>
+                      <img src={linkedInIcon} height="24px"></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -485,7 +509,7 @@ const Leadership = () => {
                       }
                     `}
                   >
-                    Mohammed Hasan Beg
+                    Mohammed Hasan
                   </Text>
                   <Text css={{ whiteSpace: "nowrap" }}>
                     Engineering{" "}
@@ -494,7 +518,11 @@ const Leadership = () => {
                       target="_blank"
                       className="ml-1"
                     >
-                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
+                      <img
+                        src={linkedInIcon}
+                        height="24px"
+                        style={{ margin: "auto" }}
+                      ></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -538,11 +566,15 @@ const Leadership = () => {
                   >
                     You?
                   </Text>
-                  <Text css={{ whiteSpace: "nowrap" }}>
-                    Join our team
-                  </Text>
+                  <Text css={{ whiteSpace: "nowrap" }}>Join our team</Text>
                   <Text variant="small" className="mt-1">
-                    You could be part of our team, join us now
+                    Looking for a technical challenge and meaningful work?{" "}
+                    <OutboundLink
+                      href="https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing"
+                      target="_blank"
+                    >
+                      Join us now
+                    </OutboundLink>
                   </Text>
                 </FeatureCard>
               </Col>
@@ -550,8 +582,6 @@ const Leadership = () => {
           </Col>
         </Row>
       </Section>
-
-      
     </>
   );
 };

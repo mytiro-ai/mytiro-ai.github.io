@@ -59,7 +59,7 @@ const Hero = () => {
         `}
       >
         <Container>
-          <Box className="d-flex flex-column align-items-center text-center mt-4">
+          <Box className="d-flex flex-column align-items-center text-center mt-5">
             <Title variant="hero" color="primary">
              Track. Learn. Tweak.
             </Title>

@@ -11,7 +11,7 @@ import NestedMenu from "../NestedMenu";
 import { device } from "../../utils";
 import Logo from "../Logo";
 import { menuItems } from "./menuItems";
-import { trackCustomEvent } from "gatsby-plugin-google-analytics";
+import { OutboundLink, trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 const SiteHeader = styled.header`
   padding: 10px 0 10px 0;
@@ -371,11 +371,11 @@ const Header = ({ isDark = false }) => {
               </div>
             </div>
             <div className="header-btns ml-auto d-none d-md-block">
-              <Link href="/">
-                <a className="ml-lg-5 ">Sign in</a>
-              </Link>
+              <OutboundLink href="https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing" target="_blank">
+                Join Us
+              </OutboundLink>
               <Link>
-                <Button className="ml-md-3" onClick={handleClick} css={{textTransform: "none", fontSize: "0.8em"}}>
+                <Button className="ml-md-3" onClick={handleClick} css={{fontSize: "0.8em"}}>
                   Join the Waitlist
                 </Button>
               </Link>
