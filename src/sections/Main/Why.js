@@ -76,7 +76,6 @@ const Why = () => {
         css={`
           margin-top: 0.2em;
           z-index: 1;
-          margin-bottom: 2.8em;
           @media ${device.lg} {
             margin-bottom: 7.8em;
           }

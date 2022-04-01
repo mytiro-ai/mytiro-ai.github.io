@@ -40,7 +40,7 @@ const Green = () => {
         <Box>
           <img src={green_mobile_image} width="100%" />
         </Box>
-        <Box>
+        <Box css={{padding: "0 4%"}}>
           {getTitle()}
           {/* <Text
             mb={4}

@@ -284,15 +284,13 @@ const Header = ({ isDark = false }) => {
     // Lets track that custom click
     trackCustomEvent({
       // string - required - The object that was interacted with (e.g.video)
-      category: "Join The team Button - header",
+      category: "Join Waitlist button",
       // string - required - Type of interaction (e.g. 'play')
       action: "Click",
       // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
-      label: "Recruitment for myTiro",
+      label: "Waitlist form for myTiro",
     });
-    window.open(
-      "https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing"
-    );
+    window.open("https://forms.gle/yhfK15wAEx71m6AGA");
   };
 
   return (
@@ -303,7 +301,7 @@ const Header = ({ isDark = false }) => {
         }`}
         dark={isDark ? 1 : 0}
       >
-        <Container fluid css={{ padding: "0 2% !important" }}>
+        <Container fluid css={{ padding: "0 2.5em !important" }}>
           <nav className="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
             <ScrollLink
               className="brand-logo"
@@ -377,8 +375,8 @@ const Header = ({ isDark = false }) => {
                 <a className="ml-lg-5 ">Sign in</a>
               </Link>
               <Link>
-                <Button className="ml-md-3" onClick={handleClick}>
-                  Join us
+                <Button className="ml-md-3" onClick={handleClick} css={{textTransform: "none", fontSize: "0.8em"}}>
+                  Join the Waitlist
                 </Button>
               </Link>
             </div>

@@ -23,7 +23,6 @@ const IndexPage = () => {
         <Green />
         <Leadership />
         {/* <Test /> */}
-        <Join />
       </PageWrapper>
     </>
   );

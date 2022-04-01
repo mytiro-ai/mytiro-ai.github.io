@@ -8,9 +8,12 @@ import jeniffer from "../../assets/SVG/Jeniffer Prendki.svg";
 import aditya from "../../assets/SVG/Aditya Giridharan.svg";
 import pranav from "../../assets/SVG/Pranav Iyer.svg";
 import rithvik from "../../assets/SVG/Rithvik Konappa.svg";
+import hasan from "../../assets/SVG/Rithvik Konappa.svg";
+import you from "../../assets/SVG/You.svg";
 import { Title, Section, Box, Text } from "../../components/Core";
 import pattern4 from "../../assets/SVG/Pattern_4@2x.svg";
 import linkedInIcon from '../../assets/SVG/LinkedIn_icon.svg';
+import pattern from "../../assets/Png/Pattern_5.png";
 
 const ShapeBottomLeft = styled(Box)`
   position: absolute;
@@ -22,14 +25,21 @@ const ShapeBottomLeft = styled(Box)`
   }
 `;
 
+const ShapeBottom = styled(Box)`
+  position: absolute;
+  bottom: -18.5vw;
+  right: 0vw;
+  width: 18vw;
+`;
+
 const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
-  <Box bg="transparent" borderRadius={10} mb={4} {...rest} css={{}}>
+  <Box bg="transparent" borderRadius={10} mb={4} {...rest} css={{}} className="mr-md-4">
     <Box
       fontSize="28px"
       className="d-flex align-items-center"
       css={{ backgroundColor: "transparent", marginBottom: "4%" }}
     >
-      <img src={imgSrc} width="70%" />
+      <img src={imgSrc} width="70%" style={{maxWidth: "285px"}}/>
     </Box>
     <div>
       <Text fontSize={2}>{children}</Text>
@@ -63,12 +73,12 @@ const Leadership = () => {
     `She is the founder and CEO of Alectio. Previously, she was the VP of Machine Learning at Figure Eight, the Chief Data Scientist at Atlassian, and a Senior Manager of Data Science in the Search Team at Walmart.`,
   ];
   const AdithyaContent = [
-    `Rajeev started myTiro because he could not find a simple tool or technique that told him where, when, and how he was spending his time and how he could improve his productivity daily.`,
-    `He has been part of the founding team of two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
+    `Aditya is a technology enthusiast with a keen interest in designing and architecting backend systems, and a love for logic and mathematics.`,
+    `He joined myTiro in search of a challenge that would be in equal parts technical and intellectual. Prior to joining myTiro, Aditya worked on the engineering team at Citrix R&D for 2 years.`,
   ];
   const PranavContent = [
-    `Rajeev started myTiro because he could not find a simple tool or technique that told him where, when, and how he was spending his time and how he could improve his productivity daily.`,
-    `He has been part of the founding team of two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
+    `A versatile developer, Pranav is always looking at better ways to manage his time.`,
+    `He has previously worked on mobile network software at Samsung R&D and is passionate about all things UI.`,
   ];
   const RithvikContent = [
     `Rithvik is an enthusiastic developer who fell in love with the idea of myTiro.`,
@@ -104,6 +114,9 @@ const Leadership = () => {
           margin-right: 2.5em;
         `}
       >
+        <ShapeBottom id="join-pattern">
+        <img src={pattern} alt="" className="img-fluid" />
+      </ShapeBottom>
         <img
           src={pattern4}
           alt=""
@@ -114,14 +127,9 @@ const Leadership = () => {
         <Row className="align-items-flex-start">
           <Col lg="3" className="order-lg-1">
             <div className="feature-content section-title">
-              <Row className="leadership-title">
-                <Col lg="0" className="order-lg-1 mb-3 section-title-header">
-                  TEAM
-                </Col>
-              </Row>
               <div className="feature-content section-title leadership-title">
-                <Title color="black" className="mb-0 ">
-                  Leadership & Advisors
+                <Title color="black" className="mb-4 ">
+                  Team & Advisors
                 </Title>
               </div>
             </div>
@@ -471,12 +479,12 @@ const Leadership = () => {
                       }
                     `}
                   >
-                    Mohammed Hasan
+                    Mohammed Hasan Beg
                   </Text>
                   <Text css={{ whiteSpace: "nowrap" }}>
                     Engineering{" "}
                     <a
-                      href="https://in.linkedin.com/in/adityagiridharan"
+                      href="https://www.linkedin.com/in/mohammad-hasan-1aab24193/"
                       target="_blank"
                       className="ml-1"
                     >
@@ -505,8 +513,8 @@ const Leadership = () => {
                 </FeatureCard>
               </Col>
 
-              <Col md="6" lg="4">
-                <FeatureCard imgSrc={pranav}>
+              <Col md="6" lg="4" className="ml-md-1">
+                <FeatureCard imgSrc={you}>
                   <Text
                     color="heading"
                     css={`
@@ -522,39 +530,14 @@ const Leadership = () => {
                       }
                     `}
                   >
-                    You
+                    You?
                   </Text>
                   <Text css={{ whiteSpace: "nowrap" }}>
-                    Engineering
-                    <a
-                      href="https://in.linkedin.com/in/pranaviyer24"
-                      target="_blank"
-                      className="ml-2"
-                      style={{height:"20%"}}
-                    >
-                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
-                    </a>
+                    Join our team
                   </Text>
                   <Text variant="small" className="mt-1">
-                    {PranavContent[0]} <br />
-                    {readPranav ? PranavContent[1] : ""}
+                    You could be part of our team, join us now
                   </Text>
-                  {readPranav ? (
-                    <button
-                      onClick={readMorePranavData}
-                      className="readmore-button"
-                      css={{ zIndex: 2 }}
-                    >
-                      Read Less <i className="icon icon-small-up" />
-                    </button>
-                  ) : (
-                    <button
-                      onClick={readMorePranavData}
-                      className="readmore-button"
-                    >
-                      Read More <i className="icon icon-small-down" />
-                    </button>
-                  )}
                 </FeatureCard>
               </Col>
             </Row>

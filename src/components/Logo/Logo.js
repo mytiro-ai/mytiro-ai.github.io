@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import imgL1Logo from "../../assets/SVG/Logo.svg";
-import imgL1LogoWhite from "../../assets/SVG/Logo@2x.svg";
+import imgL1Logo from "../../assets/SVG/Logo@2x.svg";
+import imgL1LogoWhite from "../../assets/SVG/Logo.svg";
 
 const Logo = ({ white, height, className = "", ...rest }) => {
   return (

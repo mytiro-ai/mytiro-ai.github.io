@@ -24,7 +24,7 @@ const Purple = () => (
         z-index: 1;
         padding: 6% 10%;
         border-radius: 0;
-        margin: 0;
+        margin: 2.8em 0;
         height: auto !important;
         overflow: hidden;
         @media ${device.md} {

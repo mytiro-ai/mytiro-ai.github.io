@@ -6,14 +6,8 @@ import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import logo from "../../assets/SVG/Logo Symbol.svg";
-import pattern from "../../assets/Png/Pattern_5.png";
 
-const ShapeBottom = styled(Box)`
-  position: absolute;
-  bottom: -18.5vw;
-  right: 0vw;
-  width: 18vw;
-`;
+
 
 const Join = () => {
   const handleClick = (e) => {
@@ -34,9 +28,6 @@ const Join = () => {
   return(
   <>
     <Section bg="warning" className="position-relative">
-      <ShapeBottom id="join-pattern">
-        <img src={pattern} alt="" className="img-fluid" />
-      </ShapeBottom>
       <Container>
         <Row className="justify-content-center">
           <Col>
