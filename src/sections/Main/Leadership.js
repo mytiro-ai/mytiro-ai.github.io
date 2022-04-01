@@ -71,8 +71,8 @@ const Leadership = () => {
     `He has been part of the founding team of two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
   ];
   const RithvikContent = [
-    `Rajeev started myTiro because he could not find a simple tool or technique that told him where, when, and how he was spending his time and how he could improve his productivity daily.`,
-    `He has been part of the founding team of two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
+    `Rithvik is an enthusiastic developer who fell in love with the idea of myTiro.`,
+    `Dynamic and passionate, he aspires to bring this productivity tool to every professional’s device.`,
   ];
 
   const readMoreShoaibData = () => {
