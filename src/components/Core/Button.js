@@ -15,7 +15,6 @@ const ButtonStyled = styled.button`
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.63px;
-  text-transform: uppercase;
   padding: 15px 20px;
   box-shadow: 0 32px 54px rgba(3, 3, 3, 0.12);
   border-radius: 50rem;

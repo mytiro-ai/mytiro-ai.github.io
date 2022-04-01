@@ -8,7 +8,7 @@ import jeniffer from "../../assets/SVG/Jeniffer Prendki.svg";
 import aditya from "../../assets/SVG/Aditya Giridharan.svg";
 import pranav from "../../assets/SVG/Pranav Iyer.svg";
 import rithvik from "../../assets/SVG/Rithvik Konappa.svg";
-import hasan from "../../assets/SVG/Rithvik Konappa.svg";
+import hasan from "../../assets/SVG/Moh_Hasan.svg";
 import you from "../../assets/SVG/You.svg";
 import { Title, Section, Box, Text } from "../../components/Core";
 import pattern4 from "../../assets/SVG/Pattern_4@2x.svg";
@@ -91,8 +91,8 @@ const Leadership = () => {
   ];
 
   const HasanContent = [
-    `Rithvik is an enthusiastic developer who fell in love with the idea of myTiro.`,
-    `Dynamic and passionate, he aspires to bring this productivity tool to every professional’s device.`,
+    `Hasan is a developer passionate about building technology that simplifies people's lives.`,
+    `At myTiro, he hopes to make use of his skills to create the next big productivity tool.`,
   ];
 
   const readMoreShoaibData = () => {
@@ -115,7 +115,7 @@ const Leadership = () => {
   };
 
   const readMoreHasanData = () => {
-    setreadRithvik(!readHasan);
+    setreadHasan(!readHasan);
   };
 
   return (
@@ -492,7 +492,7 @@ const Leadership = () => {
           <Col lg="9" className="pl-lg-5 order-lg-6 mt-4">
             <Row>
               <Col md="6" lg="4">
-                <FeatureCard imgSrc={aditya}>
+                <FeatureCard imgSrc={hasan}>
                   <Text
                     className="mb-0"
                     css={`
@@ -568,8 +568,9 @@ const Leadership = () => {
                   </Text>
                   <Text css={{ whiteSpace: "nowrap" }}>Team Member</Text>
                   <Text variant="small" className="mt-1">
-                    Looking for a technical challenge and meaningful work?{" "}<br />
-                    <div style={{marginTop: "3%"}}>
+                    Looking for a technical challenge and meaningful work?{" "}
+                    <br />
+                    <div style={{ marginTop: "3%" }}>
                       <OutboundLink
                         href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing"
                         target="_blank"

@@ -31,6 +31,7 @@ const FeatureCard = ({ imgSrc, children, ...rest }) => (
             css={{
               color: "#000",
               fontWeight: "500",
+              fontSize: "1.125rem",
               fontFamily: "Roboto,sans-serif",
             }}
           >
@@ -58,28 +59,37 @@ const Benefits = () => (
             </Title>
           </div>
           <Row className="mt-5">
-            <Col md="6" sm="12">
+            <Col md="7" sm="12">
               <FeatureCard imgSrc={benefit1}>
-              Tracks all your activities -<br/>gives you a single source of truth
+                <span style={{ fontWeight: 520, color: "#643992" }}>
+                  Track{" "}
+                </span>
+                all your activities -<br />
+                gives a single source of truth
               </FeatureCard>
             </Col>
-            <Col md="6" sm="12">
+            <Col md="5" sm="12">
               <FeatureCard imgSrc={benefit3}>Identifies your goals</FeatureCard>
             </Col>
-            <Col md="6" sm="12">
+            <Col md="7" sm="12">
               <FeatureCard imgSrc={benefit4}>
-                Learns about your habits -<br/>insights to create time and focus
+                <span style={{ fontWeight: 520, color: "#643992" }}>Learn</span>{" "}
+                about your habits -<br />
+                insights to create time and focus
               </FeatureCard>
             </Col>
-            <Col md="6" sm="12">
+            <Col md="5" sm="12">
               <FeatureCard imgSrc={benefit5}>Tracks your benefits</FeatureCard>
             </Col>
-            <Col md="6" sm="12">
+            <Col md="7" sm="12">
               <FeatureCard imgSrc={benefit2}>
-                Daily productivity tweak -<br/>compounds benefits
+                Daily productivity{" "}
+                <span style={{ fontWeight: 520, color: "#643992" }}>Tweak</span>{" "}
+                -<br />
+                compounds benefits
               </FeatureCard>
             </Col>
-            <Col md="6" sm="12">
+            <Col md="5" sm="12">
               <FeatureCard imgSrc={benefit6}>
                 Works with existing apps
               </FeatureCard>
