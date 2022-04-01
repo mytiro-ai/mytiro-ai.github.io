@@ -63,8 +63,12 @@ $xl: 1200px; //Extra Large screen start
   box-shadow: none;
   border: 0;
   font-weight: 500;
-  margin-top: 3%;
-  padding-left: 0%;
+  margin-top: 2%;
+  padding: 0
+}
+
+.readmore-button:focus, .readmore-button:focus-visible{
+  border: 0;
 }
 
 .leadership-title{

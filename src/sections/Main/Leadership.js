@@ -27,9 +27,9 @@ const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
     <Box
       fontSize="28px"
       className="d-flex align-items-center"
-      css={{ backgroundColor: "transparent", marginBottom: "24px" }}
+      css={{ backgroundColor: "transparent", marginBottom: "2%" }}
     >
-      <img src={imgSrc} width="80%" />
+      <img src={imgSrc} width="70%" />
     </Box>
     <div>
       <Text fontSize={2}>{children}</Text>
@@ -138,14 +138,14 @@ const Leadership = () => {
                     css={`
                       color: black;
                       font-weight: 650;
-                      font-size: 2.5rem;
+                      font-size: 2.1rem;
 
                       @media ${device.xs} {
                         font-size: 1.5rem;
                       }
 
                       @media ${device.lg} {
-                        font-size: 2.1rem;
+                        font-size: 1.8rem;
                       }
                     `}
                   >
@@ -158,7 +158,7 @@ const Leadership = () => {
                       target="_blank"
                       className="ml-1"
                     >
-                      <img src={linkedInIcon} height="26px" style={{margin: 'auto'}}></img>
+                      <img src={linkedInIcon} height="21px" style={{margin: 'auto'}}></img>
                     </a>
                   </Text>
                   <Text variant="small" className="mt-1">
@@ -189,14 +189,14 @@ const Leadership = () => {
                     color="heading"
                     css={`
                       font-weight: 650;
-                      font-size: 2.5rem;
+                      font-size: 2.1rem;
 
                       @media ${device.xs} {
                         font-size: 1.5rem;
                       }
 
                       @media ${device.lg} {
-                        font-size: 2.1rem;
+                        font-size: 1.8rem;
                       }
                     `}
                   >
@@ -243,14 +243,14 @@ const Leadership = () => {
                     css={`
                       color: black;
                       font-weight: 650;
-                      font-size: 2.5rem;
+                      font-size: 2.1rem;
 
                       @media ${device.xs} {
                         font-size: 1.5rem;
                       }
 
                       @media ${device.lg} {
-                        font-size: 2.1rem;
+                        font-size: 1.8rem;
                       }
                     `}
                   >
@@ -299,14 +299,14 @@ const Leadership = () => {
                     css={`
                       color: black;
                       font-weight: 650;
-                      font-size: 2.5rem;
+                      font-size: 2.1rem;
 
                       @media ${device.xs} {
                         font-size: 1.5rem;
                       }
 
                       @media ${device.lg} {
-                        font-size: 2.1rem;
+                        font-size: 1.8rem;
                       }
                     `}
                   >
@@ -350,14 +350,14 @@ const Leadership = () => {
                     color="heading"
                     css={`
                       font-weight: 650;
-                      font-size: 2.5rem;
+                      font-size: 2.1rem;
 
                       @media ${device.xs} {
                         font-size: 1.5rem;
                       }
 
                       @media ${device.lg} {
-                        font-size: 2.1rem;
+                        font-size: 1.8rem;
                       }
                     `}
                   >
@@ -404,14 +404,14 @@ const Leadership = () => {
                     css={`
                       color: black;
                       font-weight: 650;
-                      font-size: 2.5rem;
+                      font-size: 2.1rem;
 
                       @media ${device.xs} {
                         font-size: 1.5rem;
                       }
 
                       @media ${device.lg} {
-                        font-size: 2.1rem;
+                        font-size: 1.8rem;
                       }
                     `}
                   >
