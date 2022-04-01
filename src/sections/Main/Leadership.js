@@ -570,7 +570,7 @@ const Leadership = () => {
                   <Text variant="small" className="mt-1">
                     Looking for a technical challenge and meaningful work?{" "}
                     <OutboundLink
-                      href="https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing"
+                      href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing"
                       target="_blank"
                     >
                       Join us now

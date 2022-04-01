@@ -371,7 +371,7 @@ const Header = ({ isDark = false }) => {
               </div>
             </div>
             <div className="header-btns ml-auto d-none d-md-block">
-              <OutboundLink href="https://docs.google.com/document/d/1zfLpdLD_4tfKJIi0vhIBeHj4P-2A-OdF-irHLZ_igVQ/edit?usp=sharing" target="_blank">
+              <OutboundLink href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing" target="_blank">
                 Join Us
               </OutboundLink>
               <Link>
