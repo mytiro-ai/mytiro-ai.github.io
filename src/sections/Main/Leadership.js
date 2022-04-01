@@ -527,7 +527,7 @@ const Leadership = () => {
                   </Text>
                   <Text variant="small" className="mt-1">
                     {HasanContent[0]} <br />
-                    {readAditya ? HasanContent[1] : ""}
+                    {readHasan ? HasanContent[1] : ""}
                   </Text>
                   {readAditya ? (
                     <button
@@ -566,15 +566,17 @@ const Leadership = () => {
                   >
                     You?
                   </Text>
-                  <Text css={{ whiteSpace: "nowrap" }}>Join our team</Text>
+                  <Text css={{ whiteSpace: "nowrap" }}>Team Member</Text>
                   <Text variant="small" className="mt-1">
-                    Looking for a technical challenge and meaningful work?{" "}
-                    <OutboundLink
-                      href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing"
-                      target="_blank"
-                    >
-                      Join us now
-                    </OutboundLink>
+                    Looking for a technical challenge and meaningful work?{" "}<br />
+                    <div style={{marginTop: "3%"}}>
+                      <OutboundLink
+                        href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing"
+                        target="_blank"
+                      >
+                        Join our team
+                      </OutboundLink>
+                    </div>
                   </Text>
                 </FeatureCard>
               </Col>

@@ -83,7 +83,7 @@ const Hero = () => {
                 `}
                 onClick={handleClick}
               >
-                Join the waitlist
+                Try myTiro
               </Button>
             </Link>
           </Box>

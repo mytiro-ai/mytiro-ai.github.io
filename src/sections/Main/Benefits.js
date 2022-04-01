@@ -60,7 +60,7 @@ const Benefits = () => (
           <Row className="mt-5">
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit1}>
-                Tracks all your activities to give you a single source of truth
+              Tracks all your activities -<br/>gives you a single source of truth
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
@@ -68,8 +68,7 @@ const Benefits = () => (
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit4}>
-                Learn about your habits -<br /> Insights to create time and
-                increase your focus
+                Learns about your habits -<br/>insights to create time and focus
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">
@@ -77,7 +76,7 @@ const Benefits = () => (
             </Col>
             <Col md="6" sm="12">
               <FeatureCard imgSrc={benefit2}>
-                Change your actions - Daily productivity tips
+                Daily productivity tweak -<br/>compounds benefits
               </FeatureCard>
             </Col>
             <Col md="6" sm="12">

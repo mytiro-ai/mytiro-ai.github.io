@@ -372,11 +372,11 @@ const Header = ({ isDark = false }) => {
             </div>
             <div className="header-btns ml-auto d-none d-md-block">
               <OutboundLink href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing" target="_blank">
-                Join Us
+                Join The Team
               </OutboundLink>
               <Link>
                 <Button className="ml-md-3" onClick={handleClick} css={{fontSize: "0.8em"}}>
-                  Join the Waitlist
+                  Try myTiro
                 </Button>
               </Link>
             </div>
