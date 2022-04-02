@@ -290,7 +290,9 @@ const Header = ({ isDark = false }) => {
       // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
       label: "Waitlist form for myTiro",
     });
-    window.open("https://forms.gle/yhfK15wAEx71m6AGA");
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSdFM9Qpdd_3NSsneAHKNeC8kIAhpyKd1B9CW5OltilgCbiPFw/viewform"
+    );
   };
 
   return (
@@ -371,11 +373,18 @@ const Header = ({ isDark = false }) => {
               </div>
             </div>
             <div className="header-btns ml-auto d-none d-md-block">
-              <OutboundLink href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing" target="_blank">
+              <OutboundLink
+                href="https://drive.google.com/file/d/1QyLnbnqPtgH64KsqakdtvpO0yi5is7Jo/view?usp=sharing"
+                target="_blank"
+              >
                 Join The Team
               </OutboundLink>
               <Link>
-                <Button className="ml-md-3" onClick={handleClick} css={{fontSize: "0.8em"}}>
+                <Button
+                  className="ml-md-3"
+                  onClick={handleClick}
+                  css={{ fontSize: "0.8em" }}
+                >
                   Try myTiro
                 </Button>
               </Link>

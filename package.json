@@ -54,7 +54,7 @@
     "develop": "gatsby develop -p 9000",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"
+    "deploy": "gatsby build --prefix-paths && cp ./src/CNAME public/ && gh-pages -d public -b main"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",

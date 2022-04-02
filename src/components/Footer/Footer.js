@@ -71,28 +71,28 @@ const Footer = ({ isDark = true }) => {
         >
           <Row className="justify-content-center">
             <Col lg="2" md="4">
-            <ScrollLink
-              className="brand-logo"
-              activeClass="active"
-              to="hero"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              key={-1}
-              css={{
-                cursor: "pointer",
-              }}
-            >
-              <Logo white={isDark} />
-            </ScrollLink>
+              <ScrollLink
+                className="brand-logo"
+                activeClass="active"
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                key={-1}
+                css={{
+                  cursor: "pointer",
+                }}
+              >
+                <Logo white={isDark} />
+              </ScrollLink>
             </Col>
             <Col lg="10" md="8" className="mt-5 mt-lg-0">
               <Row>
                 <Col xs="6" lg="3">
                   <div className="mb-5 mb-lg-4">
                     <UlStyled color={isDark ? "lightShade" : "darkShade"}>
-                      <li>
+                      {/* <li>
                         <ScrollLink
                           activeClass="active"
                           to={"why"}
@@ -101,7 +101,7 @@ const Footer = ({ isDark = true }) => {
                           offset={-70}
                           duration={500}
                           css={{
-                            cursor: 'pointer'
+                            cursor: "pointer",
                           }}
                         >
                           What we do
@@ -116,7 +116,7 @@ const Footer = ({ isDark = true }) => {
                           offset={-70}
                           duration={500}
                           css={{
-                            cursor: 'pointer'
+                            cursor: "pointer",
                           }}
                         >
                           Benefits
@@ -131,7 +131,7 @@ const Footer = ({ isDark = true }) => {
                           offset={-70}
                           duration={500}
                           css={{
-                            cursor: 'pointer'
+                            cursor: "pointer",
                           }}
                         >
                           Privacy
@@ -146,12 +146,12 @@ const Footer = ({ isDark = true }) => {
                           offset={-70}
                           duration={500}
                           css={{
-                            cursor: 'pointer'
+                            cursor: "pointer",
                           }}
                         >
                           Team
                         </ScrollLink>
-                      </li>
+                      </li> */}
                     </UlStyled>
                   </div>
                 </Col>
@@ -170,7 +170,7 @@ const Footer = ({ isDark = true }) => {
                           Help
                         </ScrollLink>
                       </li> */}
-                      <li>
+                      {/* <li>
                         <ScrollLink
                           activeClass="active"
                           to={"team"}
@@ -179,13 +179,13 @@ const Footer = ({ isDark = true }) => {
                           offset={-70}
                           duration={500}
                           css={{
-                            cursor: 'pointer'
+                            cursor: "pointer",
                           }}
                         >
                           Contact Us
                         </ScrollLink>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <ScrollLink
                           activeClass="active"
                           to={"team"}
@@ -199,7 +199,7 @@ const Footer = ({ isDark = true }) => {
                         >
                           Terms & Conditions
                         </ScrollLink>
-                      </li>
+                      </li> */}
                     </UlStyled>
                   </div>
                 </Col>

@@ -572,7 +572,7 @@ const Leadership = () => {
                     <br />
                     <div style={{ marginTop: "3%" }}>
                       <OutboundLink
-                        href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1QyLnbnqPtgH64KsqakdtvpO0yi5is7Jo/view?usp=sharing"
                         target="_blank"
                       >
                         Join our team

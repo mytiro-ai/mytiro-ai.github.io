@@ -162,7 +162,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
       </ListGroup>
       <div className="header-btns header-btns-menu ml-auto ml-lg-0">
         <Link
-          href="https://drive.google.com/file/d/1-9ncsPD4FxtR43THU-N8lYabg3nH1gDN/view?usp=sharing"
+          href="https://drive.google.com/file/d/1QyLnbnqPtgH64KsqakdtvpO0yi5is7Jo/view?usp=sharing"
           target="_blank"
         >
           <a
@@ -178,7 +178,11 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
         <Link>
           <Button
             className="ml-lg-3 mt-3"
-            onClick={() => window.open("https://forms.gle/yhfK15wAEx71m6AGA")}
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdFM9Qpdd_3NSsneAHKNeC8kIAhpyKd1B9CW5OltilgCbiPFw/viewform"
+              )
+            }
           >
             Try myTiro
           </Button>

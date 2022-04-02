@@ -86,7 +86,7 @@ const Benefits = () => (
                 Daily productivity{" "}
                 <span style={{ fontWeight: 520, color: "#643992" }}>Tweak</span>{" "}
                 -<br />
-                compounds benefits
+                compound benefits
               </FeatureCard>
             </Col>
             <Col md="5" sm="12">

@@ -21,7 +21,9 @@ const Hero = () => {
       // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
       label: "Waitlist form for myTiro",
     });
-    window.open("https://forms.gle/yhfK15wAEx71m6AGA");
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSdFM9Qpdd_3NSsneAHKNeC8kIAhpyKd1B9CW5OltilgCbiPFw/viewform"
+    );
   };
 
   return (
@@ -35,7 +37,7 @@ const Hero = () => {
             id="topcurve-image"
             css={`
               position: fixed;
-              width: 100%; 
+              width: 100%;
               top: -1rem;
               @media ${device.xl} {
                 top: -4.4rem;
@@ -61,7 +63,7 @@ const Hero = () => {
         <Container>
           <Box className="d-flex flex-column align-items-center text-center mt-5">
             <Title variant="hero" color="primary">
-             Track. Learn. Tweak.
+              Track. Learn. Tweak.
             </Title>
             <Text
               color="text"
