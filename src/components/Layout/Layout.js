@@ -88,7 +88,7 @@ const Layout = ({ children, pageContext }) => {
           <link rel="icon" type="image/png" href={imgFavicon} />
           <meta
             name="description"
-            content="The most comprehensive personal time, activity, and focus tracker."
+            content="The most comprehensive personal time, activity and focus tracker."
           />
           <meta
             name="image"
@@ -101,7 +101,7 @@ const Layout = ({ children, pageContext }) => {
           <meta property="og:title" content="myTiro - Track. Learn. Tweak" />
           <meta
             property="og:description"
-            content="The most comprehensive personal time, activity, and focus tracker."
+            content="The most comprehensive personal time, activity and focus tracker."
           />
           <meta
             property="og:image"
@@ -134,7 +134,7 @@ const Layout = ({ children, pageContext }) => {
           <link rel="icon" type="image/png" href={imgFavicon} />
           <meta
             name="description"
-            content="The most comprehensive personal time, activity, and focus tracker."
+            content="The most comprehensive personal time, activity and focus tracker."
           />
           <meta
             name="image"
@@ -147,7 +147,7 @@ const Layout = ({ children, pageContext }) => {
           <meta property="og:title" content="myTiro - Track. Learn. Tweak" />
           <meta
             property="og:description"
-            content="The most comprehensive personal time, activity, and focus tracker."
+            content="The most comprehensive personal time, activity and focus tracker."
           />
           <meta
             property="og:image"

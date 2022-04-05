@@ -171,7 +171,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
               margin-bottom: 3em;
             `}
           >
-            Join The Team
+            Join the team
           </a>
         </Link>
         <br />

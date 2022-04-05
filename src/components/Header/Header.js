@@ -377,7 +377,7 @@ const Header = ({ isDark = false }) => {
                 href="https://drive.google.com/file/d/1QyLnbnqPtgH64KsqakdtvpO0yi5is7Jo/view?usp=sharing"
                 target="_blank"
               >
-                Join The Team
+                Join the team
               </OutboundLink>
               <Link>
                 <Button

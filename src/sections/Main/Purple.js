@@ -38,8 +38,10 @@ const Purple = () => (
       <img src={purple} className="purple-banner-image" />
       <div className="d-flex flex-column justify-content-center align-items-center text-center">
         <Title color="light">
-          At myTiro, we help you understand
-          <br /> what your time really looks like.
+          myTiro helps you understand
+          <br /> what your time really looks like
+          {/* At myTiro, we help you understand
+          <br /> what your time really looks like. */}
         </Title>
       </div>
     </Section>
