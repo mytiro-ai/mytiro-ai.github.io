@@ -61,7 +61,7 @@ const Benefits = () => (
           <Row className="mt-5">
             <Col md="7" sm="12">
               <FeatureCard imgSrc={benefit1}>
-                <span style={{ fontWeight: 520, color: "#643992" }}>
+                <span style={{ fontWeight: 700, color: "#7B46B5" }}>
                   Track{" "}
                 </span>
                 all your activities -<br />
@@ -73,7 +73,7 @@ const Benefits = () => (
             </Col>
             <Col md="7" sm="12">
               <FeatureCard imgSrc={benefit4}>
-                <span style={{ fontWeight: 520, color: "#643992" }}>Learn</span>{" "}
+                <span style={{ fontWeight: 700, color: "#7B46B5" }}>Learn</span>{" "}
                 about your habits -<br />
                 insights to create time and focus
               </FeatureCard>
@@ -84,7 +84,7 @@ const Benefits = () => (
             <Col md="7" sm="12">
               <FeatureCard imgSrc={benefit2}>
                 Daily productivity{" "}
-                <span style={{ fontWeight: 520, color: "#643992" }}>Tweak</span>{" "}
+                <span style={{ fontWeight: 700, color: "#7B46B5" }}>Tweak</span>{" "}
                 -<br />
                 compound benefits
               </FeatureCard>

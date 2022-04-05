@@ -317,11 +317,6 @@ const Leadership = () => {
                   )}
                 </FeatureCard>
               </Col>
-            </Row>
-          </Col>
-          <Col lg="3" className="order-lg-3"></Col>
-          <Col lg="9" className="pl-lg-5 order-lg-4 mt-4">
-            <Row>
               <Col md="6" lg="4">
                 <FeatureCard imgSrc={aditya}>
                   <Text
@@ -486,11 +481,6 @@ const Leadership = () => {
                   )}
                 </FeatureCard>
               </Col>
-            </Row>
-          </Col>
-          <Col lg="3" className="order-lg-5"></Col>
-          <Col lg="9" className="pl-lg-5 order-lg-6 mt-4">
-            <Row>
               <Col md="6" lg="4">
                 <FeatureCard imgSrc={hasan}>
                   <Text
