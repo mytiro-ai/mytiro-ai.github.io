@@ -529,7 +529,7 @@ const Leadership = () => {
                     {HasanContent[0]} <br />
                     {readHasan ? HasanContent[1] : ""}
                   </Text>
-                  {readAditya ? (
+                  {readHasan ? (
                     <button
                       onClick={readMoreHasanData}
                       className="readmore-button"
