@@ -17,17 +17,17 @@ const FeatureCard = ({ imgSrc, children, ...rest }) => (
     bg="transparent"
     mb={4}
     {...rest}
-    className="d-flex align-items-baseline justify-content"
+    className="align-items-baseline justify-content"
   >
     <Row>
       <Col xs={1} borderRadius="50%">
         <img src={imgSrc} className="mt-1" />
       </Col>
-      <Col xs={10}>
+      <Col xs={11}>
         <Box>
           <Text
             lineHeight={1.75}
-            className="ml-4 featurecard-text"
+            className="ml-1 featurecard-text"
             css={{
               color: "#000",
               fontWeight: "500",
@@ -51,7 +51,7 @@ const Benefits = () => (
           <div className="feature-content section-title">
             <Row className="align-items-center">
               <Col lg="0" className="order-lg-1 mb-1 ml-3 section-title-header">
-                BENEFITS
+                {" "}
               </Col>
             </Row>
             <Title className="mt-lg-4" color="black">
@@ -59,41 +59,37 @@ const Benefits = () => (
             </Title>
           </div>
           <Row className="mt-5">
-            <Col md="7" sm="12">
+            <Col xl="12" sm="12">
               <FeatureCard imgSrc={benefit1}>
                 <span style={{ fontWeight: 700, color: "#7B46B5" }}>
                   Track{" "}
                 </span>
-                all your activities -<br />
-                gives a single source of truth
+                all your activities with a single source of truth
               </FeatureCard>
             </Col>
-            <Col md="5" sm="12">
+            {/* <Col md="5" sm="12">
               <FeatureCard imgSrc={benefit3}>Identifies your goals</FeatureCard>
-            </Col>
-            <Col md="7" sm="12">
+            </Col> */}
+            <Col xl="12" sm="12">
               <FeatureCard imgSrc={benefit4}>
                 <span style={{ fontWeight: 700, color: "#7B46B5" }}>Learn</span>{" "}
-                about your habits -<br />
-                insights to create time and focus
+                about your habits to create time and focus
               </FeatureCard>
             </Col>
-            <Col md="5" sm="12">
+            {/* <Col md="5" sm="12">
               <FeatureCard imgSrc={benefit5}>Tracks your benefits</FeatureCard>
-            </Col>
-            <Col md="7" sm="12">
+            </Col> */}
+            <Col xl="12" sm="12">
               <FeatureCard imgSrc={benefit2}>
-                Daily productivity{" "}
-                <span style={{ fontWeight: 700, color: "#7B46B5" }}>Tweak</span>{" "}
-                -<br />
-                compound benefits
+                Compound your benefits with a daily productivity{" "}
+                <span style={{ fontWeight: 700, color: "#7B46B5" }}>Tweak</span>
               </FeatureCard>
             </Col>
-            <Col md="5" sm="12">
+            {/* <Col md="5" sm="12">
               <FeatureCard imgSrc={benefit6}>
                 Works with existing apps
               </FeatureCard>
-            </Col>
+            </Col> */}
           </Row>
         </Col>
 

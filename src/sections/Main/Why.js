@@ -40,12 +40,12 @@ const Why = () => {
   let Heading = [
     "Our work is to understand you - ",
     "your ",
-    " context, patterns, and habits",
+    " context, patterns and habits",
     ".",
   ];
 
   let Content = [
-    `With dozens of emails, phone calls, meetings, and lists, you
+    `With dozens of emails, phone calls, meetings and lists, you
                   have many decisions to make each day. We help you spot the
                   spaces for the focused, productive work you wish to
                   accomplish.`,
@@ -124,20 +124,23 @@ const Why = () => {
                   `}
                 >
                   We understand{" "}
-                  <span style={{ whiteSpace: "nowrap" }}>you -<br/></span>
-                  your <span
+                  <span style={{ whiteSpace: "nowrap" }}>
+                    you -<br />
+                  </span>
+                  your{" "}
+                  <span
                     css={`
                       color: #643992;
                     `}
                   >
-                    context, patterns, and habits.
+                    context, patterns and habits.
                   </span>
                 </Text>{" "}
                 <div>
                   <Text>
                     You have many demands on your time each day - emails, phone
-                    calls, meetings, goals, and lists. We help you find time for
-                    the focused, productive work you wish to accomplish.
+                    calls, meetings, goals and lists. We help you find time for
+                    the focused, productive work you'd LIKE to accomplish.
                   </Text>
                   {/* <Text>{read ? Content[1] : ""}</Text>
                   {read ? (

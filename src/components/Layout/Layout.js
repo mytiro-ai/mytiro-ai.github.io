@@ -84,8 +84,30 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <title>myTiro.ai</title>
+          <title>myTiro - Track. Learn. Tweak</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
+          <meta
+            name="description"
+            content="The most comprehensive personal time, activity and focus tracker."
+          />
+          <meta
+            name="image"
+            content="/static/Logo-0bb592d2045106ef6d15946d57144df1.svg"
+          />
+          <meta
+            name="keywords"
+            content="productivity, time, tracker, learn, goals, tips, calendar"
+          />
+          <meta property="og:title" content="myTiro - Track. Learn. Tweak" />
+          <meta
+            property="og:description"
+            content="The most comprehensive personal time, activity and focus tracker."
+          />
+          <meta
+            property="og:image"
+            content="/static/Logo-0bb592d2045106ef6d15946d57144df1.svg"
+          />
+          <meta property="og:url" content="https://mytiro.ai" />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
           <div className="load-circle">
@@ -95,7 +117,6 @@ const Layout = ({ children, pageContext }) => {
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
           {children}
         </div>
-
       </ThemeProvider>
     );
   }
@@ -109,8 +130,30 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <title>myTiro.ai</title>
+          <title>myTiro - Track. Learn. Tweak</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
+          <meta
+            name="description"
+            content="The most comprehensive personal time, activity and focus tracker."
+          />
+          <meta
+            name="image"
+            content="/static/Logo-0bb592d2045106ef6d15946d57144df1.svg"
+          />
+          <meta
+            name="keywords"
+            content="productivity, time, tracker, learn, goals, tips, calendar"
+          />
+          <meta property="og:title" content="myTiro - Track. Learn. Tweak" />
+          <meta
+            property="og:description"
+            content="The most comprehensive personal time, activity and focus tracker."
+          />
+          <meta
+            property="og:image"
+            content="/static/Logo-0bb592d2045106ef6d15946d57144df1.svg"
+          />
+          <meta property="og:url" content="https://mytiro.ai" />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
           <div className="load-circle">

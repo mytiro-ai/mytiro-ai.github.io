@@ -76,16 +76,16 @@ const Leadership = () => {
     `He has been part of the founding team of multiple projects harnessing large datasets and ML. He was recently with GE, working to optimize their power business through large dataset analytics`,
   ];
   const RajeevContent = [
-    `Rajeev started myTiro because he could not find a simple tool or technique that told him where, when, and how he was spending his time and how he could improve his productivity daily.`,
+    `Rajeev started myTiro because he could not find a simple tool or technique that told him where, when and how he was spending his time and how he could improve his productivity daily.`,
     `He has been part of the founding team of two tech startups and one hedge fund. He has 20+ years of experience across US & India, including 8 years as CEO.`,
   ];
 
   const JenifferContent = [
-    `Dr. Prendki, PhD from Sorbonne, is advising myTiro on how to scale high-performance ML and build a data-driven approach.`,
-    `She is the founder and CEO of Alectio. Previously, she was the VP of Machine Learning at Figure Eight, the Chief Data Scientist at Atlassian, and a Senior Manager of Data Science in the Search Team at Walmart.`,
+    `Dr Prendki, PhD from Sorbonne, is advising myTiro on how to scale high-performance ML and build a data-driven approach.`,
+    `She is the founder and CEO of Alectio. Previously, she was the VP of Machine Learning at Figure Eight, the Chief Data Scientist at Atlassian and a Senior Manager of Data Science in the Search Team at Walmart.`,
   ];
   const AdithyaContent = [
-    `Aditya is a technology enthusiast with a keen interest in designing and architecting backend systems, and a love for logic and mathematics.`,
+    `Aditya is a technology enthusiast with a keen interest in designing and architecting backend systems and a love for logic and mathematics.`,
     `He joined myTiro in search of a challenge that would be in equal parts technical and intellectual. Prior to joining myTiro, Aditya worked on the engineering team at Citrix R&D for 2 years.`,
   ];
   const PranavContent = [
@@ -291,7 +291,7 @@ const Leadership = () => {
                       }
                     `}
                   >
-                    Dr. Jennifer Prendki
+                    Dr Jennifer Prendki
                   </Text>
                   <Text css={{ whiteSpace: "nowrap" }}>
                     Advisor{" "}

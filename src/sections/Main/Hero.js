@@ -7,6 +7,7 @@ import Guy from "../../assets/SVG/Banner.svg";
 import Banner_mobile from "../../assets/SVG/Banner_mobile.svg";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 import { device } from "../../utils";
+import banner from "../../assets/SVG/trackLearnTweakBanner.svg";
 
 const Hero = () => {
   const handleClick = (e) => {
@@ -62,9 +63,10 @@ const Hero = () => {
       >
         <Container>
           <Box className="d-flex flex-column align-items-center text-center mt-5">
-            <Title variant="hero" color="primary">
+            {/* <Title variant="hero" color="primary">
               Track. Learn. Tweak.
-            </Title>
+            </Title> */}
+            <img width="75%" src={banner}></img>
             <Text
               color="text"
               css={`
@@ -74,8 +76,8 @@ const Hero = () => {
               `}
               mb="2.5rem"
             >
-              myTiro is the most comprehensive personal time, activity, and
-              focus tracker.
+              myTiro is the most comprehensive personal time, activity and focus
+              tracker.
             </Text>
             <Link>
               <Button
