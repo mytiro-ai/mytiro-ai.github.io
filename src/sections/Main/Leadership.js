@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { device } from "../../utils";
+import { device, breakpoints } from "../../utils";
 import { Row, Col } from "react-bootstrap";
 import shoaib from "../../assets/SVG/Shoaib Ahmed.svg";
 import rajeev from "../../assets/SVG/Rajeev Ved.svg";
@@ -31,6 +31,13 @@ const ShapeBottom = styled(Box)`
   bottom: -18.5vw;
   right: -2.5em;
   width: 18vw;
+  @media (max-width: ${breakpoints.sm}px) {
+    position: absolute;
+    bottom: -150px;
+    right: -2.5em;
+    width: 150px;
+  }
+
 `;
 
 const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
