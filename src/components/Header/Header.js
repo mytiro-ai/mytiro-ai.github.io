@@ -385,7 +385,7 @@ const Header = ({ isDark = false }) => {
                   onClick={handleClick}
                   css={{ fontSize: "0.8em" }}
                 >
-                  Try myTiro
+                  Signup for closed beta
                 </Button>
               </Link>
             </div>

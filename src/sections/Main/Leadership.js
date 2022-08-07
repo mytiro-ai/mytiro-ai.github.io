@@ -37,7 +37,6 @@ const ShapeBottom = styled(Box)`
     right: -2.5em;
     width: 150px;
   }
-
 `;
 
 const FeatureCard = ({ imgSrc, name, children, ...rest }) => (
@@ -324,7 +323,7 @@ const Leadership = () => {
                   )}
                 </FeatureCard>
               </Col>
-              <Col md="6" lg="4">
+              {/* <Col md="6" lg="4">
                 <FeatureCard imgSrc={aditya}>
                   <Text
                     className="mb-0"
@@ -378,9 +377,9 @@ const Leadership = () => {
                     </button>
                   )}
                 </FeatureCard>
-              </Col>
+              </Col> */}
 
-              <Col md="6" lg="4">
+              {/* <Col md="6" lg="4">
                 <FeatureCard imgSrc={pranav}>
                   <Text
                     color="heading"
@@ -435,7 +434,7 @@ const Leadership = () => {
                     </button>
                   )}
                 </FeatureCard>
-              </Col>
+              </Col> */}
 
               <Col md="6" lg="4">
                 <FeatureCard imgSrc={rithvik}>

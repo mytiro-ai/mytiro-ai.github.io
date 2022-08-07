@@ -184,7 +184,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
               )
             }
           >
-            Try myTiro
+            Signup for closed beta
           </Button>
         </Link>
       </div>

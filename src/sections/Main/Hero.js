@@ -63,10 +63,10 @@ const Hero = () => {
       >
         <Container>
           <Box className="d-flex flex-column align-items-center text-center mt-5">
-            {/* <Title variant="hero" color="primary">
+            <Title variant="hero" color="primary">
               Track. Learn. Tweak.
-            </Title> */}
-            <img width="75%" src={banner}></img>
+            </Title>
+            {/* <img width="75%" src={banner}></img> */}
             <Text
               color="text"
               css={`
@@ -87,7 +87,7 @@ const Hero = () => {
                 `}
                 onClick={handleClick}
               >
-                Try myTiro
+                Signup for closed beta
               </Button>
             </Link>
           </Box>
